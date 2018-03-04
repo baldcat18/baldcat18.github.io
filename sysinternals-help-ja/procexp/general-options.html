@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>Process Explorer 日本語解説 - 色々なオプション</title>
+		<link rel="stylesheet" href="../common.css">
+		<style>
+			table { margin-left: 2em; }
+			td:first-child { font-weight: bold; }
+		</style>
+	</head>
+	<body>
+		<h1>Process Explorer 日本語解説 - 色々なオプション</h1>
+		<nav><a href="../index.html">Sysinternals 日本語解説</a> &gt; <a href="index.html">Process Explorer</a> &gt; 色々なオプション</nav>
+		<hr>
+		<p><b>コマンドライン オプション</b></p>
+		<table>
+			<tr><td>/e</td><td>管理者権限無しで起動したときに、管理者として実行しなおすための UAC 昇格プロンプトを表示します。</td><tr>
+			<tr><td>/s:&lt;pid&gt;</td><td>起動後に指定されたプロセス ID を持つプロセスを選択状態にします。</td><tr>
+			<tr><td>/t</td><td>Process Explorer を最小化状態で起動し、通知領域に表示します。</td><tr>
+			<tr><td>/p:[r|h|n|l]</td><td>Process Explorer の基本優先度をリアルタイム (r)、高 (h)、通常 (n)、低 (l) に設定します。</td><tr>
+		</table>
+		<p><b>Always on Top</b>: この項目を選ぶと、Process Explorer のウィンドウが他のウィンドウより手前に表示されるようになります。</p>
+		<p><b>Replace Task Manager</b>: [Options] メニューのこの項目を選択すると、タスク マネージャーを起動するときに Process Explorer が代わりに実行されます。これはタスク マネージャーの起動方法に関係なく、すべてのユーザーに影響するグローバル設定です。タスク マネージャーを置き換えるとメニュー項目の名前が [Restore Task Manager] に変更され、それを選択すると Process Explorer の関連付けが解除されます。</p>
+		<p><b>Hide When Minimized</b>: [Options] メニューにあるこの項目を選択すると、Process Explorer を最小化したときに現在の CPU 使用率を反映する小さなグラフを通知領域に表示します。CPU使用率が 70% 未満の場合、メーターは緑色で表示されます。70% から 90% の間だと黄色で表示されます。90% を超えると赤で表示されます。CPU 使用率グラフは、現在定義されている更新間隔で更新されます。Process Explorer を通知領域から開始するには、コマンドライン引数として /t オプションを指定します。Process Explorer の通知領域アイコンをシングルクリックすると、通知領域内に最小化されているかどうかに関係なく、ウィンドウを復元してフォアグラウンドに表示します。</p>
+		<p><b>Allow Only One Instance</b>: これを選択すると、Process Explorer のインスタンスが複数同時に実行されないようになります。</p>
+		<p><b>Confirm Kill</b>: この設定を無効化すると、Process Explorer でプロセスを強制終了する時に確認のダイアログを表示しないようになります。</p>
+		<p><b>Tray Icons</b>: このメニューで、CPU、I/O、ディスク、ネットワーク、GPU、コミットチャージ、物理メモリの各履歴の中でどれを通知領域アイコンとして表示するか設定できます。</p>
+		<p><b>Verify Image Signatures</b>: この設定が有効な時にプロセスのプロパティを表示すると、プロセスに対応するイメージファイルのデジタル署名の信頼性が自動的にチェックされ、結果をプロセスのプロパティ ダイアログの company フィールドの隣に表示します。「(Verified)」はファイルが信頼できるルート認証局によって署名されていることを意味し、「(Unable to Verify)」はファイルが署名されていないか、署名の確認に失敗したことを表しています。プロセスイメージのプロパティを表示するときのパフォーマンスを向上させるには、このオプションのチェックを外します。</p>
+		<p><b>Configure Symbols</b>: Process Explorer でプロセスのプロパティ ダイアログのスレッド タブとスレッドスタック ウィンドウのスレッド開始アドレスを解決するには、まず Microsoft の Web サイトから <a href="https://www.microsoft.com/whdc/devtools/debugging/default.mspx">Debugging Tools for Windows</a> パッケージをダウンロードし、既定のディレクトリにインストールしてシンボルを構成します。<b>Configure Symbols</b> ダイアログを開いて、デバッグツール ディレクトリにある dbghelp.dll のパスを指定し、シンボルパスを入力して、シンボル エンジンが要求に応じて Microsoft のサーバーからシンボルをディスク上のディレクトリにダウンロードできるようにします。たとえば、シンボルを c:\symbols ディレクトリにダウンロードするには、この文字列を入力します。</p>
+		<p><code>srv*c:\symbols*http://msdl.microsoft.com/download/symbols</code></p>
+		<p><b>Difference Highlight Duration</b>: このダイアログで、新しいプロセスを緑色で表示し、終了したプロセスを赤色で表示する時間を設定できます。デフォルトは 1 秒です。強調表示の色は [Options] メニューにある [Configure Colors] ダイアログで変更できます。</p>
+	</body>
+</html>

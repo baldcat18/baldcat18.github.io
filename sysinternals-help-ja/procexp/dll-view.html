@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>Process Explorer 日本語解説 - DLL ビュー</title>
+		<link rel="stylesheet" href="../common.css">
+	</head>
+	<body>
+		<h1>Process Explorer 日本語解説 - DLL ビュー</h1>
+		<nav><a href="../index.html">Sysinternals 日本語解説</a> &gt; <a href="index.html">Process Explorer</a> &gt; DLL ビュー</nav>
+		<hr>
+		<h2>DLL のコンテキストメニュー</h2>
+		<p>DLL ビューには選択したプロセスのアドレス空間にマップされたイメージファイル、DLL、データファイルが表示されます。ツールバーの [Properties] ボタンをクリックするか DLL メニューから <b>Properties</b> を選択すると、Process Explorer は 2 つのタブがある DLL やマップドファイルのプロパティ ダイアログを開きます。</p>
+		<dl>
+			<dt>Image:</dt>
+			<dd>
+				<p>このページにはイメージファイルから引用したバージョン情報とイメージファイルのフルパスが表示されます。</p>
+				<p>Process Explorer は、コンピューターが信頼する証明書ルート機関によってイメージがデジタル署名されているかどうかを確認し、「Verified」(署名済み)、「Unable to verify」、または「Not Verified」(署名が確認されていない) のいずれかの状態を表示します。<b>Verify</b> ボタンを押すとまだ検証されていないイメージの署名を Process Explorer が確認します。検証のために証明書の有効性をチェックするのに、Process Explorer は Web サイトに接続します。<b>Verify Image Signatures</b> オプションを参照してください。</p>
+			</dd>
+			<dt>Strings:</dt>
+			<dd>
+				<p>このページには 3 文字以上の印字可能文字列がすべて表示されます。Image 文字列はディスク上にあるプロセスのイメージファイルから読み込まれ、Memory 文字列はイメージのメモリ領域から読み込まれます。イメージがメモリに読み込まれる時に圧縮や暗号化が解除される場合、メモリ内の文字列はディスク上の文字列と異なる事があります。</p>
+			</dd>
+		</dl>
+		<h2>再配置された DLL の強調表示</h2>
+		<p><b>Options|Configure Colors</b> ダイアログ内の <b>Relocated DLLs</b> を選択すると、プログラムで指定されたベースアドレスにロードされていない DLL を黄色で表示します。他のファイルが既にマップされていてベースアドレスにロードできない DLL はローダーによって再配置されます。これは CPU を消費し、再配置の一環として変更された DLL の一部を共有不能にします。</p>
+		<h2>Search Online</h2>
+		<p>この項目を選択すると、Process Explorer はシステムの既定のインターネットブラウザーを起動し、選択した DLL の名前でインターネット検索を開始します。</p>
+	</body>
+</html>

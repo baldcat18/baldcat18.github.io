@@ -1,0 +1,25 @@
+﻿body {
+	font-family: "Yu Gothic Medium", "Meiryo", sans-serif;
+	line-height: 18px;
+	margin: 2em;
+}
+h1 {
+	font-size: 144%;
+	margin-bottom: 2em;
+}
+nav {
+	font-size: smaller;
+}
+ul {
+	margin: 0;
+	padding-left: 1em;
+}
+h2 {
+	font-size: 120%;
+}
+dt {
+	font-weight: bold;
+}
+dd p {
+	margin-top: 0;
+}

@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>Process Explorer 日本語解説 - ハンドルビュー</title>
+		<link rel="stylesheet" href="../common.css">
+	</head>
+	<body>
+		<h1>Process Explorer 日本語解説 - ハンドルビュー</h1>
+		<nav><a href="../index.html">Sysinternals 日本語解説</a> &gt; <a href="index.html">Process Explorer</a> &gt; ハンドルビュー</nav>
+		<hr>
+		<h2>Handle コンテキストメニュー</h2>
+		<p>[Handle] メニューの下か、右クリックした時の [Handle] のコンテキストメニューに 2 つの項目が表示されます。</p>
+		<p><b>Close Handle:</b> この項目を選択すると、ハンドルを強制的に閉じます。これは自己責任で使用してください。ハンドルを所有しているプロセスはそのハンドルが閉じられたことを認識しないため、この機能を使用するとアプリケーションがクラッシュしたりデータが破損する可能性があります。システムプロセスのハンドルを閉じるとシステムがクラッシュする可能性があります。</p>
+		<p><b>Properties:</b> この項目を選択すると、 Process Explorer はオブジェクトで開いているハンドルの数やオブジェクトへのカーネル参照の数を表示するハンドル プロパティダイアログを開きます。またオブジェクトの種類に固有の情報も表示します。たとえば mutant オブジェクトのプロパティを表示すると、Process Explorer は mutant が所有されているかどうか、もしそうならどのスレッドが所有しているかを報告します。</p>
+		<p>ハンドル プロパティダイアログの <b>セキュリティ</b> タブには、ハンドルが参照しているオブジェクトに適用されるセキュリティが表示されます。</p>
+		<h2>名前のないハンドルを表示</h2>
+		<p>デフォルトでは、 Process Explorer は名前を持つオブジェクトへのハンドルのみを表示します。<b>View</b> メニューの <b>Show Unnamed Handles and Mappings</b> を選択すると、Process Explorer は選択されているプロセスが開いているハンドルを名前のないオブジェクトも含めてすべて一覧表示します。このオプションを選択すると Process Explorer は CPU リソースを著しく消費することに注意してください。</p>
+	</body>
+</html>
