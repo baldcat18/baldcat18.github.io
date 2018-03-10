@@ -8,6 +8,25 @@
 	<body>
 		<h1>Autoruns 日本語解説 - 表示する場所とエントリ</h1>
 		<nav><a href="../index.html">Sysinternals 日本語解説</a> &gt; <a href="index.html">Autoruns</a> &gt; 表示する場所とエントリ</nav>
-		<p></p>
+		<p>ただ Autoruns を実行するだけで、現在アプリケーションを最も直接的に実行する場所で自動起動するよう設定されているアプリケーションが表示されます。表示を更新するとオプションの変更を反映した新しいスキャンを実行します。</p>
+		<ul>
+			<li><b>Logon</b> このエントリは、現在のユーザーとすべてのユーザーのスタートアップ フォルダー、Run レジストリキー、そして標準のアプリケーション起動場所のような、標準的な自動起動エントリの場所をスキャンします。</li>
+			<li><b>Explorer</b> このエントリを選択すると、エクスプローラーのシェル拡張、ブラウザーヘルパーオブジェクト、エクスプローラーのツールバー、active setup の実行、および shell execute hook を表示します。</li>
+			<li><b>Internet Explorer</b> このエントリにはブラウザーヘルパーオブジェクト (BHO)、Internet Explorer のツールバーと拡張機能が表示されます。</li>
+			<li><b>Services</b> すべての Windows サービスはシステムの起動時に自動的に開始するように設定されています。</li>
+			<li><b>Drivers</b> ここにはシステムに登録されているカーネルモードドライバーが、無効になっているものを除いてすべて表示されます。</li>
+			<li><b>Scheduled Tasks</b> 起動時またはログオン時に開始するように構成されたタスク スケジューラのタスク。</li>
+			<li><b>AppInit</b> ここにはアプリケーション初期化 DLL として登録されたDLLが表示されます。</li>
+			<li><b>Boot Execute</b> 起動プロセスの初期段階で実行される (Windows イメージではない) ネイティブイメージ。</li>
+			<li><b>Image Hijacks</b> Image File Execution Options とコマンドプロンプト起動時の自動開始エントリ。</li>
+			<li><b>KnownDLLs</b> これは Windows がロードするアプリケーションによって参照される DLL の場所を報告します。</li>
+			<!-- <li><b>Winlogon</b> ログオンイベントの Winlogon 通知用に登録された DLL を表示します。</li> -->
+			<li><b>Winsock Providers</b> Winsock サービスプロバイダーを含む登録済みの Winsock プロトコルを表示します。マルウェアは自身を Winsock サービスプロバイダーとしてインストールすることがよくあります。Winsock サービスプロバイダーを削除するツールがほとんど無いからです。<!-- Autoruns では Winsock サービスプロバイダーを無効化できますが、削除はできません。 --></li>
+			<li><b>LSA Providers</b> 登録されているローカルセキュリティ機関 (LSA) の認証、通知、およびセキュリティパッケージを表示します。</li>
+			<li><b>Print Monitors</b> print spooling サービスによってロードされるDLLを表示します。マルウェアは自身を自動起動させるためにこのサポートを使用していたことがありました。</li>
+			<li><b>Sidebar Gadgets</b> Windows サイドバーガジェットを表示します。</li>
+		</ul>
+		<p><b>Options</b> メニューの <b>Hide Empty Locations</b> が有効化されている時、Autoruns はエントリがない場所を表示しません。</p>
+		<p><b>User</b> メニューにはユーザー名が入力されます。その中の 1 つを選択すると、そのアカウント用の自動開始イメージが表示されます。</p>
 	</body>
 </html>
