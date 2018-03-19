@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>Autoruns 日本語解説 - スキャン オプション</title>
+		<link rel="stylesheet" href="../common.css">
+	</head>
+	<body>
+		<h1>Autoruns 日本語解説 - スキャン オプション</h1>
+		<nav><a href="../index.html">Sysinternals 日本語解説</a> &gt; <a href="index.html">Autoruns</a> &gt; スキャン オプション</nav>
+		<p>Scan Options ダイアログを使用して、どの情報をスキャンで収集するのか指定します。</p>
+		<p>Autoruns は <b>Verify code signatures</b> で証明書失効リスト (CRL) Web サイトを照会してイメージの署名が有効かどうか判断するようになります。Autoruns は署名がないか、システムによって信頼されるルート証明機関のリストにある証明書ルート権限によって署名されていないイメージの会社名の横に「(Not verified)」テキストを表示します。<b>Verify code signatures</b> オプションを選択すると、署名のないイメージに対応するエントリがピンク色で強調表示されます。<b>Verify code signatures</b> オプションが無効だと、会社名やファイルの説明がないイメージの項目がピンク色で強調表示されます。</p>
+		<p><b>Check VirusTotal.com</b> オプションを有効にすると、Autoruns は無料の <a href="http://www.virustotal.com" target="_blank">VirusTotal.com</a> サービスに問い合わせて、エントリを数十のマルウェア対策エンジンでスキャンした結果を取得します。表示される結果は、「エントリがマルウェアだと報告したエンジンの数/スキャンしたエンジンの総数」か、エントリがスキャンのために送信されなかったことを示す「Unknown」のいずれかです。<b>Submit Unknown Images</b> を有効にすると Autoruns はスキャンのためにイメージを送信して結果を待ちます。これには数分間かかることがあります。</p>
+		<p><b>Scan only per-user locations</b> オプションを選択すると、Autoruns は現在または指定されたユーザープロファイルのユーザーごとの場所のみをスキャンします。これは管理者ではないアカウントに影響するエントリだけを分析するのに役立ちます。</p>
+	</body>
+</html>
