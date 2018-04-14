@@ -1,0 +1,12 @@
+﻿body {
+	font-family: "Yu Gothic Medium", "Meiryo", sans-serif;
+	line-height: 18px;
+	margin: 2em;
+}
+h1 {
+	font-size: 144%;
+}
+table {
+	width: 100%;
+	table-layout: fixed;
+}
