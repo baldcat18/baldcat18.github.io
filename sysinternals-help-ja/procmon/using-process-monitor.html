@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>Process Monitor 日本語解説 - Process Monitor の使い方</title>
+		<link rel="stylesheet" href="../common.css">
+	</head>
+	<body>
+		<h1>Process Monitor 日本語解説 - Process Monitor の使い方</h1>
+		<nav><a href="../index.html">Sysinternals 日本語解説</a> &gt; <a href="index.html">Process Monitor</a> &gt; Process Monitor の使い方</nav>
+		<p>Process Monitor を実行するにはローカル管理者グループのメンバーである必要があります。Process Monitor を起動すると、すぐにファイルシステム、レジストリ、プロセスへの操作に対する監視が開始されます。</p>
+		<ul>
+			<li><p>
+				<b>File System</b><br>Process Monitor は Windows ファイルシステムへのすべてのアクティビティを表示します。これにはローカルストレージとリモートファイルシステムへのアクセスを含みます。Process Monitor は新しいファイルシステムデバイスの追加を自動的に検出し、それらを監視します。すべてのファイルシステムパスは、ファイルシステムへの操作を実行したユーザーセッションに関連付けられて表示されます。例えば、ユーザー A が共有フォルダーをドライブ文字 Z: としてマウントした場合、その共有フォルダーへのアクセスは、Process Monitor では Z ドライブへのものとして表示されます。<br><br>ファイルシステムへの操作を非表示にするにはツールバーの Show File System Activity ボタンの選択を解除し、ファイルシステムへの操作を再表示するにはそのボタンを押します。
+			</p></li>
+			<li><p>
+				<b>Registry</b><br>Process Monitor はレジストリに対するすべての操作を記録します。レジストリパスの表示にはレジストリルートキーに慣習的な略語を使います (例えば HKEY_LOCAL_MACHINE は HKLM と表示されます)。<br><br>レジストリへの操作を非表示にするにはツールバーの Show Registry Activity ボタンの選択を解除し、レジストリへの操作を再表示するにはそのボタンを押します。
+			</p></li>
+			<li><p>
+				<b>Process</b><br>Process Monitor はプロセス/スレッド監視サブシステムで、すべてのプロセスとスレッドの作成および終了、そして DLL とデバイスドライバの読み込みを監視します。<br><br>プロセスへの操作を非表示にするにはツールバーの Show Process and Thread Activity ボタンの選択を解除し、プロセスへの操作を再表示するにはそのボタンを押します。
+			</p></li>
+			<li><p>
+				<b>Network</b><br>Process Monitor は Event Tracing for Windows (ETW) を使用して、TCP および UDP のアクティビティを追跡し記録します。各ネットワーク操作には、送信元アドレスと宛先アドレス、および送信または受信データ量を含みますが、実際のデータは含みません。<br><br>ネットワークへの操作を非表示にするにはツールバーの Show Network Activity ボタンの選択を解除し、ネットワークへの操作を再表示するにはそのボタンを押します。
+			</p></li>
+			<li><p>
+				<b>Profiling</b><br>このイベントクラスは Options メニューから有効化できます。有効化すると、Process Monitor はシステム内のすべてのアクティブなスレッドをスキャンし、前回のプロファイルイベント以降にスレッドによって使用されたカーネルモードおよびユーザーモードの CPU 時間、コンテキストスイッチの数を記録するプロファイルイベントを生成します。注意: System プロセスはプロファイリングの対象に含まれません。
+			</p></li>
+		</ul>
+		<p>Process Monitor の基本的な動作を制御するために、いくつかのオプションがあります。</p>
+		<p><b>Capture</b>: File メニューの Capture Events エントリ、ツールバーの Capture ボタン、または Ctrl+E ホットキーを使用して、監視するかどうかを切り替えます。</p>
+		<p><b>Autoscroll</b>: Edit メニューの Auto Scroll エントリ、ツールバーの Autoscroll ボタン、または Ctrl+A ホットキーを使用して、自動スクロールさせるかどうかを切り替えます。これにより最新の動作が確実に表示されます。</p>
+		<p><b>Clear</b>: すべての表示を消去するには、Edit メニューから Clear Display を選択するか Ctrl+X ホットキーを使用します。</p>
+	</body>
+</html>
