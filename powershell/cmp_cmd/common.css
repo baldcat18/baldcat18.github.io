@@ -6,6 +6,9 @@
 h1 {
 	font-size: 144%;
 }
+nav {
+	font-size: smaller;
+}
 table {
 	width: 100%;
 	table-layout: fixed;

@@ -3,10 +3,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>コマンドプロンプトと PowerShell の比較表</title>
-		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="common.css">
 	</head>
 	<body>
 		<h1>コマンドプロンプトと PowerShell の比較表</h1>
+		<hr>
 		<p>まったく同じ挙動をするとは限りません。<br>詳細は各機能のリファレンスで確認してください。</p>
 		<p>PowerShell 欄の括弧はエイリアスです。</p>
 		<table border="1">
@@ -42,6 +43,12 @@
 				<tr><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/cls" target="_blank">cls</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/clear-host" target="_blank">Clear-Host</a> (clear, cls)</td><td>画面を消去する</td></tr>
 				<tr><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/comp" target="_blank">comp</a><br><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/fc" target="_blank">fc</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/compare-object" target="_blank">Compare-Object</a> (compare, diff)</td><td>ファイルの内容を比較する</td></tr>
 				<tr><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/copy" target="_blank">copy</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/copy-item" target="_blank">Copy-Item</a> (copy, cp)</td><td>ファイルやディレクトリをコピーする</td></tr>
+				<tr id="D"><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/date" target="_blank">date</a> /t</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/get-date" target="_blank">Get-Date</a> -DisplayHint Date</td><td>日付を取得する</td></tr>
+				<tr><td>date</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/set-date" target="_blank">Set-Date</a></td><td>日付を設定する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/defrag" target="_blank">defrag</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/optimize-volume" target="_blank">Optimize-Volume</a></td><td>ボリュームを最適化する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/del" target="_blank">del</a><br><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/erase" target="_blank">erase</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/remove-item" target="_blank">Remove-Item</a> (del, erase, rm)</td><td>ファイルを削除する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/dir" target="_blank">dir</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-childitem" target="_blank">Get-ChildItem</a> (dir, ls)</td><td>ファイルやサブディレクトリを取得する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770877(v=ws.10)" target="_blank">diskpart</a></td><td><a href="diskpart.html">diskpart のサブコマンドと PowerShell の比較表</a>をご覧ください。</td><td>ディスクやパーティションを管理する</td></tr>
 				<!--
 				<tr><td><a href="" target="_blank"></a></td><td><a href="" target="_blank"></a></td><td></td></tr>
 				-->
