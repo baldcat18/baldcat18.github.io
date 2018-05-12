@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>diskpart のサブコマンドと PowerShell の比較表</title>
+		<link rel="stylesheet" href="common.css">
+	</head>
+	<body>
+		<h1>diskpart のサブコマンドと PowerShell の比較表</h1>
+		<nav><a href="index.html">コマンドプロンプトと PowerShell の比較表</a> &gt; diskpart</nav>
+		<hr>
+		<p>まったく同じ挙動をするとは限りません。<br>詳細は各機能のリファレンスで確認してください。</p>
+		<table border="1">
+			<thead>
+				<tr><th>diskpart</th><th>PowerShell</th><th>説明</th></tr>
+			</thead>
+			<tbody>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753499(v=ws.10)" target="_blank">active</a></td><td rowspan="2"><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/set-partition" target="_blank">Set-Partition</a> -IsActive</td><td>パーティションをアクティブに設定する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc755305(v=ws.10)" target="_blank">inactive</a></td><td>パーティションを非アクティブに設定する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753839(v=ws.10)" target="_blank">assign</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/add-partitionaccesspath" target="_blank">Add-PartitionAccessPath</a></td><td>パーティションにドライブ文字やマウントポイントを割り当てる</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg252595(v=ws.10)" target="_blank">attach vdisk</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/mount-diskimage" target="_blank">Mount-DiskImage</a></td><td>Virtual Hard Disk (VHD) をマウントする</td></tr>
+				<tr><td rowspan="2"><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg252649(v=ws.10)" target="_blank">attributes disk</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/get-disk" target="_blank">Get-Disk</a></td><td>ディスクの属性を取得する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/set-disk" target="_blank">Set-Disk</a></td><td>ディスクの属性を設定する</td></tr>
+				<tr><td rowspan="2"><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg252643(v=ws.10)" target="_blank">attributes volume</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/get-partition" target="_blank">Get-Partition</a></td><td>パーティションの属性を取得する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/set-partition" target="_blank">Set-Partition</a></td><td>パーティションの属性を設定する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731145(v=ws.10)" target="_blank">clean</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/clear-disk" target="_blank">Clear-Disk</a></td><td>パーティションとボリュームを消去する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731863(v=ws.10)" target="_blank">convert</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/set-disk" target="_blank">Set-Disk</a> -PartitionStyle</td><td>パーティションの形式を変換する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754498(v=ws.10)" target="_blank">create partition</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/new-partition" target="_blank">New-Partition</a></td><td>パーティションを作成する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771262(v=ws.10)" target="_blank">create volume</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/new-volume" target="_blank">New-Volume</a></td><td>ボリュームを作成する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730824(v=ws.10)" target="_blank">delete partition</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/remove-partition" target="_blank">Remove-Partition</a></td><td>パーティションを削除する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg252576(v=ws.10)" target="_blank">detach vdisk</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/dismount-diskimage" target="_blank">Dismount-DiskImage</a></td><td>Virtual Hard Disk (VHD) をアンマウントする</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754396(v=ws.10)" target="_blank">detail disk</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/get-disk" target="_blank">Get-Disk</a></td><td>ディスクを取得する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754398(v=ws.10)" target="_blank">detail partition</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/get-partition" target="_blank">Get-Partition</a></td><td>パーティションを取得する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725847(v=ws.10)" target="_blank">detail volume</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/get-volume" target="_blank">Get-Volume</a></td><td>ボリュームを取得する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg252637(v=ws.10)" target="_blank">detail vdisk</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/get-diskimage" target="_blank">Get-DiskImage</a></td><td>Virtual Hard Disk (VHD) を取得する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770938(v=ws.10)" target="_blank">extend</a></td><td rowspan="2"><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/resize-partition" target="_blank">Resize-Partition</a></td><td>パーティションのサイズを拡張する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772210(v=ws.10)" target="_blank">shrink</a></td><td>パーティションのサイズを縮小する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753770(v=ws.10)" target="_blank">format</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/format-volume" target="_blank">Format-Volume</a></td><td>ボリュームをフォーマットする</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg252603(v=ws.10)" target="_blank">offline disk</a></td><td rowspan="2"><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/set-disk" target="_blank">Set-Disk</a> -IsOffline</td><td>ディスクをオフラインにする</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg252616(v=ws.10)" target="_blank">online disk</a></td><td>ディスクをオンラインにする</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg252625(v=ws.10)" target="_blank">offline volume</a></td><td rowspan="2"><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/set-partition" target="_blank">Set-Partition</a> -IsOffline</td><td>パーティションをオフラインにする</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg252575(v=ws.10)" target="_blank">online volume</a></td><td>パーティションをオンラインにする</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731985(v=ws.10)" target="_blank">remove</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/remove-partitionaccesspath" target="_blank">Remove-PartitionAccessPath</a></td><td>パーティションのドライブ文字やマウントポイントを割り当て解除する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730793(v=ws.10)" target="_blank">uniqueid disk</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/storage/set-disk" target="_blank">Set-Disk</a> -Guid</td><td>ディスクにGUIDを設定する</td></tr>
+				<!--
+				<tr><td><a href="" target="_blank"></a></td><td><a href="" target="_blank"></a></td><td></td></tr>
+				-->
+			</tbody>
+		</table>
+	</body>
+</html>
