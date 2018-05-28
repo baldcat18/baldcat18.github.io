@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>Process Monitor 日本語解説 - 列の選択</title>
+		<link rel="stylesheet" href="../common.css">
+		<style>
+			h2 { font-size: 1em; }
+		</style>
+	</head>
+	<body>
+		<h1>Process Monitor 日本語解説 - 列の選択</h1>
+		<nav><a href="../index.html">Sysinternals 日本語解説</a> &gt; <a href="index.html">Process Monitor</a> &gt; 列の選択</nav>
+		<p>列をドラッグして順番を並べ替えることができます。表示する列をカスタマイズするには、[Options] メニューから [Select Columns] を選択して [Process Monitor Column Selection] ダイアログを開きます。選択可能な列には次のものが含まれます。</p>
+		<h2>Application Details</h2>
+		<ul>
+			<li><b>Process Name</b> イベントを発生させたプロセスの名前。</li>
+			<li><b>Image Path</b> プロセスで実行されているイメージのフルパス。</li>
+			<li><b>Command Line</b> プロセスの起動に使われたコマンドライン。</li>
+			<li><b>Company Name</b> プロセスのイメージファイルに埋め込まれた [会社] のテキスト。このテキストは、アプリケーション開発者によって任意で定義されます。</li>
+			<li><b>Description</b> プロセスのイメージファイルに埋め込まれた [ファイルの説明] のテキスト。このテキストは、アプリケーション開発者によって任意で定義されます。</li>
+			<li><b>Version</b> プロセスイメージファイルに埋め込まれた [製品バージョン] 番号。この情報は、アプリケーション開発者によって任意で指定されます。</li>
+		</ul>
+		<h2>Event Details</h2>
+		<ul>
+			<li><b>Sequence Number</b> 現在のフィルターに含まれるすべてのイベントに関する操作の相対位置。</li>
+			<li><b>Event Class</b> イベントクラス (File System、Registry、Process など)。</li>
+			<li><b>Operation</b> イベントの具体的な動作 (たとえば Read、RegQueryValue など)。</li>
+			<li><b>Date &amp; Time</b> 操作の日付と時刻の両方。</li>
+			<li><b>Time of Day</b> 操作の時刻のみ。</li>
+			<li><b>Path</b> イベントが参照するリソースのパス。</li>
+			<li><b>Detail</b> イベントに固有の追加情報。</li>
+			<li><b>Result</b> 完了した操作のステータスコード。</li>
+			<li><b>Relative Time</b> Process Monitor の開始または Process Monitor の表示が最後にクリアされた時刻に対する操作の相対時間。</li>
+			<li><b>Duration</b> 操作が完了するまでにかかった時間。</li>
+		</ul>
+		<h2>Process Management</h2>
+		<ul>
+			<li><b>User Name</b> 操作を実行したプロセスの実行ユーザーの名前。</li>
+			<li><b>Session ID</b> 操作を実行したプロセスが実行されている Windows セッション。</li>
+			<li><b>Authentication ID</b> 操作を実行したプロセスが実行されているログオンセッション。</li>
+			<li><b>Process ID</b> 操作を実行したプロセスのプロセス ID (PID)。</li>
+			<li><b>Thread ID</b> 操作を実行したスレッドのスレッド ID (TID)。</li>
+			<li><b>Integrity Level</b> 操作を実行したプロセスの整合性レベル。</li>
+			<li><b>Virtualized</b> 操作を実行したプロセスの UAC 仮想化状態。</li>
+		</ul>
+	</body>
+</html>
