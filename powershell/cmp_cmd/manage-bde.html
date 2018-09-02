@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>manage-bde と PowerShell の比較表</title>
+		<link rel="stylesheet" href="common.css">
+	</head>
+	<body>
+		<h1>manage-bde と PowerShell の比較表</h1>
+		<nav><a href="index.html">コマンドプロンプトと PowerShell の比較表</a> &gt; manage-bde</nav>
+		<hr>
+		<p>まったく同じ挙動をするとは限りません。<br>詳細は各機能のリファレンスで確認してください。</p>
+		<table border="1">
+			<thead>
+				<tr><th>manage-bde</th><th>PowerShell</th><th>説明</th></tr>
+			</thead>
+			<tbody>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/manage-bde-status" target="_blank">manage-bde -status</a></td><td rowspan="2"><a href="https://docs.microsoft.com/ja-jp/powershell/module/bitlocker/get-bitlockervolume" target="_blank">Get-BitLockerVolume</a></td><td>BitLocker 対応ボリュームに関する情報を取得する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/manage-bde-protectors" target="_blank">manage-bde -protectors</a> -get</td></td><td>暗号化キーの保護方法を取得する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/manage-bde-on" target="_blank">manage-bde –on</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/bitlocker/enable-bitlocker" target="_blank">Enable-BitLocker</a></td><td>ボリュームを暗号化し、BitLocker 保護を有効にする</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/manage-bde-off" target="_blank">manage-bde -off</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/bitlocker/disable-bitlocker" target="_blank">Disable-BitLocker</a></td><td>ボリュームの暗号化を解除し、BitLocker 保護を無効にする</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/manage-bde-pause" target="_blank">manage-bde -pause</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/bitlocker/suspend-bitlocker" target="_blank">Suspend-BitLocker</a></td><td>暗号化、暗号化の解除、または空き領域のワイプを一時停止する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/manage-bde-resume" target="_blank">manage-bde -resume</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/bitlocker/resume-bitlocker" target="_blank">Resume-BitLocker</a></td><td>暗号化、暗号化の解除、または空き領域のワイプを再開する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/manage-bde-lock" target="_blank">manage-bde -lock</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/bitlocker/lock-bitlocker" target="_blank">Lock-BitLocker</a></td><td>BitLocker 暗号化データへのアクセスを禁止する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/manage-bde-unlock" target="_blank">manage-bde -unlock</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/bitlocker/unlock-bitlocker" target="_blank">Unlock-BitLocker</a></td><td>BitLocker 暗号化データへのアクセスを許可する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/manage-bde-autounlock" target="_blank">manage-bde -autounlock</a> -enable</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/bitlocker/enable-bitlockerautounlock" target="_blank">Enable-BitLockerAutoUnlock</a></td><td>ボリュームの自動ロック解除を有効にする</td></tr>
+				<tr><td>manage-bde -autounlock -disable</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/bitlocker/disable-bitlockerautounlock" target="_blank">Disable-BitLockerAutoUnlock</a></td><td>ボリュームの自動ロック解除を無効にする</td></tr>
+				<tr><td>manage-bde -autounlock -clearallkeys</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/bitlocker/clear-bitlockerautounlock" target="_blank">Clear-BitLockerAutoUnlock</a></td><td>ボリューム上に格納されている外部キーをすべて削除する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/manage-bde-protectors" target="_blank">manage-bde -protectors</a> -add</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/bitlocker/add-bitlockerkeyprotector" target="_blank">Add-BitLockerKeyProtector</a></td><td>暗号化キーの保護方法を追加する</td></tr>
+				<tr><td>manage-bde -protectors -delete</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/bitlocker/remove-bitlockerkeyprotector" target="_blank">Remove-BitLockerKeyProtector</a></td><td>暗号化キーの保護方法を削除する</td></tr>
+				<tr><td>manage-bde -protectors -adbackup</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/bitlocker/backup-bitlockerkeyprotector" target="_blank">Backup-BitLockerKeyProtector</a></td><td>ドライブの回復情報をバックアップする</td></tr>
+			</tbody>
+		</table>
+	</body>
+</html>
