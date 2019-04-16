@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>netsh のサブコマンドと PowerShell の比較表</title>
+		<link rel="stylesheet" href="common.css">
+	</head>
+	<body>
+		<h1>netsh のサブコマンドと PowerShell の比較表</h1>
+		<nav><a href="index.html">コマンドプロンプトと PowerShell の比較表</a> &gt; netsh</nav>
+		<hr>
+		<p>まったく同じ挙動をするとは限りません。<br>詳細は各機能のリファレンスで確認してください。</p>
+		<table border="1">
+			<thead>
+				<tr><th>netsh</th><th>PowerShell</th><th>説明</th></tr>
+			</thead>
+			<tbody>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd734783(v=ws.10)" target="_blank">advfirewall firewall</a> add rule<br><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771046(v=ws.10)" target="_blank">firewall</a> add</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/netsecurity/new-netfirewallrule" target="_blank">New-NetFirewallRule</a></td><td>新しい受信または送信のファイアウォール規則を追加する</td></tr>
+				<tr><td>advfirewall firewall delete rule<br>firewall delete</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/netsecurity/remove-netfirewallrule" target="_blank">Remove-NetFirewallRule</a></td><td>すべての一致するファイアウォール規則を削除する</td></tr>
+				<tr><td>advfirewall firewall set rule<br>firewall set</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/netsecurity/set-netfirewallrule" target="_blank">Set-NetFirewallRule</a></td><td>既存の規則のプロパティに新しい値を設定する</td></tr>
+				<tr><td>advfirewall firewall show rule<br>firewall show</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/netsecurity/get-netfirewallrule" target="_blank">Get-NetFirewallRule</a></td><td>指定されたファイアウォール規則を取得する</td></tr>
+				<!--
+				<tr><td><a href="" target="_blank"></a></td><td><a href="" target="_blank"></a></td><td>する</td></tr>
+				-->
+			</tbody>
+		</table>
+	</body>
+</html>
