@@ -10,7 +10,7 @@
 		<nav><a href="index.html">PowerShell リファレンスへのリンク</a> &gt; コマンドレットのヘルプ トピック</nav>
 		<hr>
 		<p>PowerShell と共にインストールされるコマンドレットや高度な関数のヘルプ トピックへのリンク集です。</p>
-		<p><a href="#A">A</a> / B / <a href="#C">C</a> / <a href="#D">D</a> / <a href="#E">E</a> / <a href="#F">F</a> / <a href="#G">G</a> / <a href="#H">H</a> / <a href="#I">I</a> / <a href="#J">J</a> / K / <a href="#L">L</a> / <a href="#M">M</a> / <a href="#N">N</a> / <a href="#O">O</a> / <a href="#P">P</a> / Q / <a href="#R">R</a> / <a href="#S">S</a> / <a href="#T">T</a> / <a href="#U">U</a> / V / <a href="#W">W</a> / X / Y / Z</p>
+		<p><a href="#A">A</a> / B / <a href="#C">C</a> / <a href="#D">D</a> / <a href="#E">E</a> / <a href="#F">F</a> / <a href="#G">G</a> / H / <a href="#I">I</a> / <a href="#J">J</a> / K / <a href="#L">L</a> / <a href="#M">M</a> / <a href="#N">N</a> / <a href="#O">O</a> / <a href="#P">P</a> / Q / <a href="#R">R</a> / <a href="#S">S</a> / <a href="#T">T</a> / <a href="#U">U</a> / V / <a href="#W">W</a> / X / Y / Z</p>
 		<dl>
 			<dt><a id="A" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/add-computer" target="_blank">Add-Computer</a></dt>
 			<dd>コンピューターをドメインまたはワークグループに追加します。</dd>
@@ -106,6 +106,8 @@
 			<dd>指定したファイル システム ドライブのシステム復元機能を無効にします。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/psdesiredstateconfiguration/disable-dscdebug" target="_blank">Disable-DscDebug</a></dt>
 			<dd>Stops debugging of DSC resources.</dd>
+			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/disable-experimentalfeature" target="_blank">Disable-ExperimentalFeature</a></dt>
+			<dd>Disable an experimental feature on startup of new instance of PowerShell.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/psscheduledjob/disable-jobtrigger" target="_blank">Disable-JobTrigger</a></dt>
 			<dd>Disables the job triggers of scheduled jobs.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.localaccounts/disable-localuser" target="_blank">Disable-LocalUser</a></dt>
@@ -136,6 +138,8 @@
 			<dd>指定したファイル システム ドライブのシステム復元機能を有効にします。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/psdesiredstateconfiguration/enable-dscdebug" target="_blank">Enable-DscDebug</a></dt>
 			<dd>Starts debugging of all DSC resources.</dd>
+			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/enable-experimentalfeature" target="_blank">Enable-ExperimentalFeature</a></dt>
+			<dd>Enable an experimental feature on startup of new instance of PowerShell.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/psscheduledjob/enable-jobtrigger" target="_blank">Enable-JobTrigger</a></dt>
 			<dd>Enables the job triggers of scheduled jobs.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.localaccounts/enable-localuser" target="_blank">Enable-LocalUser</a></dt>
@@ -280,6 +284,8 @@
 			<dd>現在のセッションのイベント サブスクライバーを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.security/get-executionpolicy" target="_blank">Get-ExecutionPolicy</a></dt>
 			<dd>現在のセッションの実行ポリシーを取得します。</dd>
+			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/get-experimentalfeature" target="_blank">Get-ExperimentalFeature</a></dt>
+			<dd>Gets experimental features.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/get-filehash" target="_blank">Get-FileHash</a></dt>
 			<dd>指定されたハッシュ アルゴリズムを使用して、ファイルのハッシュ値を計算します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/get-formatdata" target="_blank">Get-FormatData</a></dt>
@@ -346,7 +352,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-psdrive" target="_blank">Get-PSDrive</a></dt>
 			<dd>現在のコンソール内の Windows PowerShell ドライブを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/get-pshostprocessinfo" target="_blank">Get-PSHostProcessInfo</a></dt>
-			<dd></dd>
+			<dd>Gets process information about the PowerShell host.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-psprovider" target="_blank">Get-PSProvider</a></dt>
 			<dd>指定した Windows PowerShell プロバイダーに関する情報を取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/psreadline/get-psreadlinekeyhandler" target="_blank">Get-PSReadlineKeyHandler</a></dt>
@@ -363,6 +369,8 @@
 			<dd>コンピューターに登録されたセッション構成を取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/get-pssnapin" target="_blank">Get-PSSnapin</a></dt>
 			<dd>コンピューター上の Windows PowerShell スナップインを取得します。</dd>
+			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/new-pstransportoption" target="_blank">New-PSTransportOption</a></dt>
+			<dd>Creates an object that contains advanced options for a session configuration.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/get-random" target="_blank">Get-Random</a></dt>
 			<dd>ランダムな数値を取得するか、オブジェクトをコレクションからランダムに選択します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/get-runspace" target="_blank">Get-Runspace</a></dt>
@@ -401,8 +409,6 @@
 			<dd>リソース URI で指定されたリソース インスタンスの管理情報を表示します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/group-object" target="_blank">Group-Object</a></dt>
 			<dd>指定されたプロパティが同じ値を持つオブジェクトをグループ化します。</dd>
-			<dt><a id="H" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/help" target="_blank">help</a></dt>
-			<dd>Displays information about Windows PowerShell commands and concepts.</dd>
 			<dt><a id="I" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/import-alias" target="_blank">Import-Alias</a></dt>
 			<dd>ファイルからエイリアス一覧をインポートします。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/cimcmdlets/import-binarymilog" target="_blank">Import-BinaryMiLog</a></dt>
@@ -457,6 +463,8 @@
 			<dd>リソース URI およびセレクターで指定されたオブジェクトに対して処理を実行します。</dd>
 			<dt><a id="J" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/join-path" target="_blank">Join-Path</a></dt>
 			<dd>パスと子パスを 1 つのパスに結合します。</dd>
+			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/join-string" target="_blank">Join-String</a></dt>
+			<dd>Combines objects from the pipeline into a single string.</dd>
 			<dt><a id="L" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/limit-eventlog" target="_blank">Limit-EventLog</a></dt>
 			<dd>イベント ログのサイズおよびエントリの期間を制限するイベント ログ プロパティを設定します。</dd>
 			<dt><a id="M" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/measure-command" target="_blank">Measure-Command</a></dt>
@@ -613,6 +621,8 @@
 			<dd>Creates a scheduled job.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/register-wmievent" target="_blank">Register-WmiEvent</a></dt>
 			<dd>WMI オブジェクトによって生成されるイベントをサブスクライブします。</dd>
+			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/remove-alias" target="_blank">Remove-Alias</a></dt>
+			<dd>Remove an alias from the current session.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/cimcmdlets/remove-ciminstance" target="_blank">Remove-CimInstance</a></dt>
 			<dd>Removes a CIM instance from a computer.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/cimcmdlets/remove-cimsession" target="_blank">Remove-CimSession</a></dt>
@@ -833,6 +843,8 @@
 			<dd>Tests whether the actual configuration on the nodes matches the desired configuration.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.security/test-filecatalog" target="_blank">Test-FileCatalog</a></dt>
 			<dd>`Test-FileCatalog` validates whether the hashes contained in a catalog file (.cat) matches the hashes of the actual files in order to validate their authenticity.</dd>
+			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/test-json" target="_blank">Test-Json</a></dt>
+			<dd>Tests whether a string is a valid JSON document</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/test-modulemanifest" target="_blank">Test-ModuleManifest</a></dt>
 			<dd>モジュール マニフェストにモジュールの内容が正確に記述されていることを確認します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/test-path" target="_blank">Test-Path</a></dt>
@@ -920,6 +932,10 @@
 			<dd>テキストを Windows PowerShell の詳細メッセージ ストリームに書き込みます。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/write-warning" target="_blank">Write-Warning</a></dt>
 			<dd>警告メッセージを書き込みます。</dd>
+			<!--
+			<dt><a href="" target="_blank"></a></dt>
+			<dd></dd>
+			-->
 		</dl>
 	</body>
 </html>
