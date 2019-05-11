@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>reg のオプションと PowerShell の比較表</title>
+		<link rel="stylesheet" href="common.css">
+	</head>
+	<body>
+		<h1>reg のオプションと PowerShell の比較表</h1>
+		<nav><a href="index.html">コマンドプロンプトと PowerShell の比較表</a> &gt; reg</nav>
+		<hr>
+		<p>まったく同じ挙動をするとは限りません。<br>詳細は各機能のリファレンスで確認してください。</p>
+		<table border="1">
+			<thead>
+				<tr><th>reg</th><th>PowerShell</th><th>説明</th></tr>
+			</thead>
+			<tbody>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/reg-add" target="_blank">reg add</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/new-item" target="_blank">New-Item</a></td><td>レジストリ キーを作成する</td></tr>
+				<tr><td rowspan="2">reg add /v<br>reg add /ve</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/new-itemproperty" target="_blank">New-ItemProperty</a></td><td>レジストリ エントリを作成する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/set-itemproperty" target="_blank">Set-ItemProperty</a></td><td>レジストリ エントリのデータを設定する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/reg-compare" target="_blank">reg compare</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/compare-object" target="_blank">Compare-Object</a></td><td>レジストリ エントリを比較する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/reg-copy" target="_blank">reg copy</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/copy-item" target="_blank">Copy-Item</a></td><td>レジストリ キーをコピーする</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/reg-delete" target="_blank">reg delete</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/remove-item" target="_blank">Remove-Item</a></td><td>レジストリ キーを削除する</td></tr>
+				<tr><td>reg delete /v<br>reg delete /ve</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/remove-itemproperty" target="_blank">Remove-ItemProperty</a></td><td>レジストリ エントリを削除する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/reg-query" target="_blank">reg query</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-childitem" target="_blank">Get-ChildItem</a></td><td>レジストリ サブキーを取得する</td></tr>
+				<tr><td>reg query /v<br>reg query /ve</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-itemproperty" target="_blank">Get-ItemProperty</a></td><td>レジストリ エントリを取得する</td></tr>
+				<!--
+				<tr><td><a href="" target="_blank"></a></td><td><a href="" target="_blank"></a></td><td>する</td></tr>
+				-->
+			</tbody>
+		</table>
+	</body>
+</html>
