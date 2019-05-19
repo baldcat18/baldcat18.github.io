@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>sc のオプションと PowerShell の比較表</title>
+		<link rel="stylesheet" href="common.css">
+	</head>
+	<body>
+		<h1>sc のオプションと PowerShell の比較表</h1>
+		<nav><a href="index.html">コマンドプロンプトと PowerShell の比較表</a> &gt; sc</nav>
+		<hr>
+		<p>まったく同じ挙動をするとは限りません。<br>詳細は各機能のリファレンスで確認してください。</p>
+		<table border="1">
+			<thead>
+				<tr><th>sc</th><th>PowerShell</th><th>説明</th></tr>
+			</thead>
+			<tbody>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc990290(v=ws.10)" target="_blank">sc config</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/set-service" target="_blank">Set-Service</a></td><td>サービスの設定を変更する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc742080(v=ws.10)" target="_blank">sc continue</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/resume-service" target="_blank">Resume-Service</a></td><td>中断中のサービスを再開する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc990289(v=ws.10)" target="_blank">sc create</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/new-service" target="_blank">New-Service</a></td><td>サービスを作成する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc742045(v=ws.10)" target="_blank">sc delete</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/remove-service" target="_blank">Remove-Service</a></td><td>サービスを削除する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc742122(v=ws.10)" target="_blank">sc pause</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/suspend-service" target="_blank">Suspend-Service</a></td><td>サービスを中断する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc742055(v=ws.10)" target="_blank">sc qc</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-service" target="_blank">Get-Service</a></td><td>サービスの構成情報を取得する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc742126(v=ws.10)" target="_blank">sc start</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/start-service" target="_blank">Start-Service</a></td><td>サービスを開始する</td></tr>
+				<tr><td><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc742107(v=ws.10)" target="_blank">sc stop</a></td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/stop-service" target="_blank">Stop-Service</a></td><td>サービスを停止する</td></tr>
+			</tbody>
+		</table>
+	</body>
+</html>
