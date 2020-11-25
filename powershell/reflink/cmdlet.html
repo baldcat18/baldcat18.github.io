@@ -13,7 +13,7 @@
 		<p><a href="#A">A</a> / B / <a href="#C">C</a> / <a href="#D">D</a> / <a href="#E">E</a> / <a href="#F">F</a> / <a href="#G">G</a> / H / <a href="#I">I</a> / <a href="#J">J</a> / K / <a href="#L">L</a> / <a href="#M">M</a> / <a href="#N">N</a> / <a href="#O">O</a> / <a href="#P">P</a> / Q / <a href="#R">R</a> / <a href="#S">S</a> / <a href="#T">T</a> / <a href="#U">U</a> / V / <a href="#W">W</a> / X / Y / Z</p>
 		<dl>
 			<dt id="A"><a id="add" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/add-computer" target="_blank">Add-Computer</a></dt>
-			<dd>コンピューターをドメインまたはワークグループに追加します。</dd>
+			<dd>ローカル コンピューターをドメインまたはワークグループに追加します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/add-content" target="_blank">Add-Content</a></dt>
 			<dd>指定した項目に内容を追加します。たとえば、ファイルに語を追加します。
 				<dl>
@@ -36,7 +36,7 @@
 			<dt id="C"><a id="checkpoint" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/checkpoint-computer" target="_blank">Checkpoint-Computer</a></dt>
 			<dd>ローカル コンピューターのシステム復元ポイントを作成します。</dd>
 			<dt><a id="clear" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/clear-content" target="_blank">Clear-Content</a></dt>
-			<dd>ファイルからテキストを削除するなど、項目の内容を削除します。ただし、項目自体は削除しません。
+			<dd>項目の内容を削除します。項目自体は削除しません。
 				<dl>
 					<dt><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/powershell-scripting/jj628240(v=wps.640)" target="_blank">FileSystem の Clear-Content</a></dt>
 					<dd>項目の内容を削除します。項目自体は削除しません。</dd>
@@ -49,17 +49,17 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/clear-host" target="_blank">Clear-Host</a></dt>
 			<dd>ホスト プログラムの表示を消去します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/clear-item" target="_blank">Clear-Item</a></dt>
-			<dd>項目の値を削除します。項目自体は削除しません。</dd>
+			<dd>項目の内容を消去しますが、項目は削除しません。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/clear-itemproperty" target="_blank">Clear-ItemProperty</a></dt>
-			<dd>プロパティの値を削除します。プロパティ自体は削除しません。</dd>
+			<dd>プロパティの値をクリアしますが、プロパティは削除しません。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/clear-recyclebin" target="_blank">Clear-RecycleBin</a></dt>
-			<dd>Clears the contents of a recycle bin.</dd>
+			<dd>ごみ箱の内容をクリアします。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/clear-variable" target="_blank">Clear-Variable</a></dt>
 			<dd>変数の値を削除します。</dd>
 			<dt><a id="compare" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/compare-object" target="_blank">Compare-Object</a></dt>
 			<dd>2 セットのオブジェクトを比較します。</dd>
 			<dt><a id="complete" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/complete-transaction" target="_blank">Complete-Transaction</a></dt>
-			<dd>アクティブなトランザクションをコミットします。</dd>
+			<dd>有効なトランザクションをコミットします。</dd>
 			<dt><a id="compress" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.archive/compress-archive" target="_blank">Compress-Archive</a></dt>
 			<dd>指定したファイルおよびディレクトリから圧縮されたアーカイブ (zip 形式のファイル) を作成します。</dd>
 			<dt><a id="connect" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/connect-pssession" target="_blank">Connect-PSSession</a></dt>
@@ -67,7 +67,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.wsman.management/connect-wsman" target="_blank">Connect-WSMan</a></dt>
 			<dd>リモート コンピューター上の WinRM サービスに接続します。</dd>
 			<dt><a id="convert" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/convert-path" target="_blank">Convert-Path</a></dt>
-			<dd>Windows PowerShell のパスを Windows PowerShell プロバイダーのパスに変換します。</dd>
+			<dd>PowerShell パスから PowerShell プロバイダーパスへのパスを変換します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/convert-string" target="_blank">Convert-String</a></dt>
 			<dd>Formats a string to match examples.</dd>
 			<dt><a id="convertfrom" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/convertfrom-csv" target="_blank">ConvertFrom-CSV</a></dt>
@@ -95,7 +95,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/convertto-xml" target="_blank">ConvertTo-XML</a></dt>
 			<dd>オブジェクトの表記を XML ベースで作成します。</dd>
 			<dt><a id="copy" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/copy-item" target="_blank">Copy-Item</a></dt>
-			<dd>名前空間内のある場所から別の場所に項目をコピーします。</dd>
+			<dd>項目をある場所から別の場所にコピーします。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/copy-itemproperty" target="_blank">Copy-ItemProperty</a></dt>
 			<dd>プロパティとその値を、指定された場所から別の場所へコピーします。</dd>
 			<dt id="D"><a id="debug" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/debug-job" target="_blank">Debug-Job</a></dt>
@@ -227,7 +227,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.security/get-authenticodesignature" target="_blank">Get-AuthenticodeSignature</a></dt>
 			<dd>ファイルの Authenticode 署名に関する情報を取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-childitem" target="_blank">Get-ChildItem</a></dt>
-			<dd>1 つ以上の指定された場所から項目および子項目を取得します。&quot;dir&quot; と似ています。
+			<dd>1 つ以上の指定された場所から項目および子項目を取得します。
 				<dl>
 					<dt><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/powershell-scripting/hh847761(v=wps.640)" target="_blank">Certificate の Get-ChildItem</a></dt>
 					<dd>Windows PowerShell Cert: ドライブの証明書ストアの場所、証明書ストア、証明書を取得します。</dd>
@@ -244,13 +244,13 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/cimcmdlets/get-cimsession" target="_blank">Get-CimSession</a></dt>
 			<dd>現在のセッションから CIM セッションオブジェクトを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-clipboard" target="_blank">Get-Clipboard</a></dt>
-			<dd>Gets the current Windows clipboard entry.</dd>
+			<dd>クリップボードの内容を取得します。 [!NOTE] &gt; Linux で、このコマンドレットでは <code>xclip</code> ユーティリティをパスに配置する必要があります。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.security/get-cmsmessage" target="_blank">Get-CmsMessage</a></dt>
 			<dd>Gets content that has been encrypted by using the Cryptographic Message Syntax format.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/get-command" target="_blank">Get-Command</a></dt>
 			<dd>すべてのコマンドを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-computerinfo" target="_blank">Get-ComputerInfo</a></dt>
-			<dd>Gets a consolidated object of system and operating system properties.</dd>
+			<dd>システムおよびオペレーティングシステムのプロパティの統合オブジェクトを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-computerrestorepoint" target="_blank">Get-ComputerRestorePoint</a></dt>
 			<dd>ローカル コンピューターで復元ポイントを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-content" target="_blank">Get-Content</a></dt>
@@ -283,7 +283,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/get-event" target="_blank">Get-Event</a></dt>
 			<dd>イベント キューからイベントを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-eventlog" target="_blank">Get-EventLog</a></dt>
-			<dd>特定のイベント ログ内のイベントまたはコンピューター上のイベント ログの一覧を取得します。</dd>
+			<dd>ローカルコンピューターまたはリモートコンピューター上のイベントログまたはイベントログの一覧のイベントを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/get-eventsubscriber" target="_blank">Get-EventSubscriber</a></dt>
 			<dd>現在のセッションのイベント サブスクライバーを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.security/get-executionpolicy" target="_blank">Get-ExecutionPolicy</a></dt>
@@ -301,7 +301,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/get-host" target="_blank">Get-Host</a></dt>
 			<dd>現在のホスト プログラムを表すオブジェクトを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-hotfix" target="_blank">Get-HotFix</a></dt>
-			<dd>ローカルおよびリモート コンピューターに適用された修正プログラムを取得します。</dd>
+			<dd>ローカルコンピューターまたはリモートコンピューターにインストールされている修正プログラムを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/powershellget/get-installedmodule" target="_blank">Get-InstalledModule</a></dt>
 			<dd>Gets installed modules on a computer.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/powershellget/get-installedscript" target="_blank">Get-InstalledScript</a></dt>
@@ -318,7 +318,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-itemproperty" target="_blank">Get-ItemProperty</a></dt>
 			<dd>指定した項目のプロパティを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-itempropertyvalue" target="_blank">Get-ItemPropertyValue</a></dt>
-			<dd>Gets the value for one or more properties of a specified item.</dd>
+			<dd>指定した項目の1つ以上のプロパティの値を取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/get-job" target="_blank">Get-Job</a></dt>
 			<dd>現在のセッションで実行されている PowerShell バックグラウンドジョブを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/psscheduledjob/get-jobtrigger" target="_blank">Get-JobTrigger</a></dt>
@@ -330,7 +330,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.localaccounts/get-localuser" target="_blank">Get-LocalUser</a></dt>
 			<dd>ローカルユーザーアカウントを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-location" target="_blank">Get-Location</a></dt>
-			<dd>現在の作業場所に関する情報を取得します。</dd>
+			<dd>現在の作業場所または場所スタックに関する情報を取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/psdiagnostics/get-logproperties" target="_blank">Get-LogProperties</a></dt>
 			<dd>Retrieves the properties of a Windows event log.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/get-markdownoption" target="_blank">Get-MarkdownOption</a></dt>
@@ -356,11 +356,11 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/get-pscallstack" target="_blank">Get-PSCallStack</a></dt>
 			<dd>現在のコール スタックを表示します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-psdrive" target="_blank">Get-PSDrive</a></dt>
-			<dd>現在のコンソール内の Windows PowerShell ドライブを取得します。</dd>
+			<dd>現在のセッションのドライブを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/get-pshostprocessinfo" target="_blank">Get-PSHostProcessInfo</a></dt>
 			<dd>PowerShell ホストに関するプロセス情報を取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-psprovider" target="_blank">Get-PSProvider</a></dt>
-			<dd>指定した Windows PowerShell プロバイダーに関する情報を取得します。</dd>
+			<dd>指定された PowerShell プロバイダーに関する情報を取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/psreadline/get-psreadlinekeyhandler" target="_blank">Get-PSReadlineKeyHandler</a></dt>
 			<dd>Gets the key bindings for the PSReadline module.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/psreadline/get-psreadlineoption" target="_blank">Get-PSReadlineOption</a></dt>
@@ -386,13 +386,13 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/psscheduledjob/get-scheduledjoboption" target="_blank">Get-ScheduledJobOption</a></dt>
 			<dd>Gets the job options of scheduled jobs.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-service" target="_blank">Get-Service</a></dt>
-			<dd>ローカルまたはリモート コンピューター上のサービスを取得します。</dd>
+			<dd>コンピューター上のサービスを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-timezone" target="_blank">Get-TimeZone</a></dt>
-			<dd>Gets the current time zone or a list of available time zones.</dd>
+			<dd>現在のタイムゾーンまたは使用可能なタイムゾーンの一覧を取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/get-tracesource" target="_blank">Get-TraceSource</a></dt>
 			<dd>トレース用にインストルメント化されている Windows PowerShell コンポーネントを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-transaction" target="_blank">Get-Transaction</a></dt>
-			<dd>現在の (アクティブ) トランザクションを取得します。</dd>
+			<dd>現在の (有効な) トランザクションを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/get-typedata" target="_blank">Get-TypeData</a></dt>
 			<dd>現在のセッションで、拡張型データを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/get-uiculture" target="_blank">Get-UICulture</a></dt>
@@ -542,7 +542,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/new-object" target="_blank">New-Object</a></dt>
 			<dd>.Net または COM オブジェクトのインスタンスを作成します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/new-psdrive" target="_blank">New-PSDrive</a></dt>
-			<dd>Windows PowerShell ドライブを現在のコンソールに作成します。</dd>
+			<dd>一時的および永続的にマップされたネットワーク ドライブを作成します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/new-psrolecapabilityfile" target="_blank">New-PSRoleCapabilityFile</a></dt>
 			<dd>セッション構成を通じて公開される一連の機能を定義するファイルを作成します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/new-pssession" target="_blank">New-PSSession</a></dt>
@@ -570,7 +570,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/new-variable" target="_blank">New-Variable</a></dt>
 			<dd>新しい変数を作成します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/new-webserviceproxy" target="_blank">New-WebServiceProxy</a></dt>
-			<dd>Windows PowerShell で Web サービスの使用と管理を行うことができる Web サービス プロキシ オブジェクトを作成します。</dd>
+			<dd>PowerShell で Web サービスを使用および管理できる Web サービスプロキシオブジェクトを作成します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.diagnostics/new-winevent" target="_blank">New-WinEvent</a></dt>
 			<dd>指定したイベント プロバイダーの新しい Windows イベントを作成します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.wsman.management/new-wsmaninstance" target="_blank">New-WSManInstance</a></dt>
@@ -592,7 +592,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/out-string" target="_blank">Out-String</a></dt>
 			<dd>オブジェクトを一連の文字列としてホストに送ります。</dd>
 			<dt id="P"><a id="pop" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/pop-location" target="_blank">Pop-Location</a></dt>
-			<dd>Push-Location によって最後にスタックへプッシュされた場所に移動します。</dd>
+			<dd>現在の場所を、最後にスタックにプッシュした場所に変更します。</dd>
 			<dt><a id="protect" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.security/protect-cmsmessage" target="_blank">Protect-CmsMessage</a></dt>
 			<dd>Encrypts content by using the Cryptographic Message Syntax format.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/psreadline/psconsolehostreadline" target="_blank">PSConsoleHostReadline</a></dt>
@@ -604,7 +604,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/powershellget/publish-script" target="_blank">Publish-Script</a></dt>
 			<dd>Publishes a script from the local computer to an online gallery.</dd>
 			<dt><a id="push" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/push-location" target="_blank">Push-Location</a></dt>
-			<dd>現在の場所を、場所のリスト (スタック) の最上部に追加します。</dd>
+			<dd>現在の場所を、場所スタックの最上部に追加します。</dd>
 			<dt id="R"><a id="read" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/read-host" target="_blank">Read-Host</a></dt>
 			<dd>コンソールからの入力行を読み取ります。</dd>
 			<dt><a id="receive" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/receive-job" target="_blank">Receive-Job</a></dt>
@@ -628,7 +628,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/psscheduledjob/register-scheduledjob" target="_blank">Register-ScheduledJob</a></dt>
 			<dd>Creates a scheduled job.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/register-wmievent" target="_blank">Register-WmiEvent</a></dt>
-			<dd>WMI オブジェクトによって生成されるイベントをサブスクライブします。</dd>
+			<dd>Windows Management Instrumentation (WMI) イベントにサブスクライブします。</dd>
 			<dt><a id="remove" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/remove-alias" target="_blank">Remove-Alias</a></dt>
 			<dd>Remove an alias from the current session.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/cimcmdlets/remove-ciminstance" target="_blank">Remove-CimInstance</a></dt>
@@ -636,7 +636,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/cimcmdlets/remove-cimsession" target="_blank">Remove-CimSession</a></dt>
 			<dd>1つ以上の CIM セッションを削除します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/remove-computer" target="_blank">Remove-Computer</a></dt>
-			<dd>コンピューターをワークグループまたはドメインから削除します。</dd>
+			<dd>ドメインからローカル コンピューターを削除します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/psdesiredstateconfiguration/remove-dscconfigurationdocument" target="_blank">Remove-DscConfigurationDocument</a></dt>
 			<dd>Removes a configuration document from the DSC configuration store.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/remove-event" target="_blank">Remove-Event</a></dt>
@@ -669,7 +669,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/remove-psbreakpoint" target="_blank">Remove-PSBreakpoint</a></dt>
 			<dd>現在のコンソールからブレークポイントを削除します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/remove-psdrive" target="_blank">Remove-PSDrive</a></dt>
-			<dd>Windows PowerShell ドライブをその場所から削除します。</dd>
+			<dd>一時 PowerShell ドライブを削除し、マップされたネットワークドライブを切断します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/psreadline/remove-psreadlinekeyhandler" target="_blank">Remove-PSReadlineKeyHandler </a></dt>
 			<dd>Removes a key binding.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/remove-pssession" target="_blank">Remove-PSSession</a></dt>
@@ -681,13 +681,13 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/remove-variable" target="_blank">Remove-Variable</a></dt>
 			<dd>変数とその値を削除します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/remove-wmiobject" target="_blank">Remove-WmiObject</a></dt>
-			<dd>WMI クラスおよびインスタンスを削除します。</dd>
+			<dd>既存の Windows Management Instrumentation (WMI) クラスのインスタンスを削除します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.wsman.management/remove-wsmaninstance" target="_blank">Remove-WSManInstance</a></dt>
 			<dd>管理リソースのインスタンスを削除します。</dd>
 			<dt><a id="rename" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/rename-computer" target="_blank">Rename-Computer</a></dt>
 			<dd>コンピューターの名前を変更します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/rename-item" target="_blank">Rename-Item</a></dt>
-			<dd>Windows PowerShell プロバイダーの名前空間にある項目の名前を変更します。</dd>
+			<dd>PowerShell プロバイダーの名前空間内の項目の名前を変更します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/rename-itemproperty" target="_blank">Rename-ItemProperty</a></dt>
 			<dd>項目のプロパティの名前を変更します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.localaccounts/rename-localgroup" target="_blank">Rename-LocalGroup</a></dt>
@@ -699,9 +699,9 @@
 			<dt><a id="resolve" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/resolve-path" target="_blank">Resolve-Path</a></dt>
 			<dd>パス中のワイルドカード文字を解決し、パスの内容を表示します。</dd>
 			<dt><a id="restart" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/restart-computer" target="_blank">Restart-Computer</a></dt>
-			<dd>ローカル コンピューターおよびリモート コンピューター上でオペレーティング システムを再起動 (リブート) します。</dd>
+			<dd>ローカルコンピューターとリモートコンピューターのオペレーティングシステムを再起動します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/restart-service" target="_blank">Restart-Service</a></dt>
-			<dd>1 つ以上のサービスを再起動します。</dd>
+			<dd>1 つ以上のサービスを停止し、再起動します。</dd>
 			<dt><a id="restore" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/restore-computer" target="_blank">Restore-Computer</a></dt>
 			<dd>ローカル コンピューターでシステムの復元を開始します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/psdesiredstateconfiguration/restore-dscconfiguration" target="_blank">Restore-DscConfiguration</a></dt>
@@ -735,9 +735,9 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/cimcmdlets/set-ciminstance" target="_blank">Set-CimInstance</a></dt>
 			<dd>Cim クラスの <strong>modifyinstance</strong> メソッドを呼び出すことによって、cim サーバー上の cim インスタンスを変更します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/set-clipboard" target="_blank">Set-Clipboard</a></dt>
-			<dd>Sets the current Windows clipboard entry.</dd>
+			<dd>クリップボードの内容を設定します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/set-content" target="_blank">Set-Content</a></dt>
-			<dd>項目に内容を書き込むか、新しい内容で置き換えます。
+			<dd>新しいコンテンツを書き込むか、ファイル内の既存のコンテンツを置き換えます。
 				<dl>
 					<dt><a href="https://docs.microsoft.com/ja-jp/previous-versions/windows/powershell-scripting/hh847827(v=wps.640)" target="_blank">FileSystem の Set-Content</a></dt>
 					<dd>指定したコンテンツとファイルのコンテンツを置換します。</dd>
@@ -788,13 +788,13 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/set-strictmode" target="_blank">Set-StrictMode</a></dt>
 			<dd>式、スクリプト、およびスクリプト ブロックでのコーディング規則を確立し、適用します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/set-timezone" target="_blank">Set-TimeZone</a></dt>
-			<dd>Sets the system time zone to a specified time zone.</dd>
+			<dd>システムのタイムゾーンを指定したタイムゾーンに設定します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/set-tracesource" target="_blank">Set-TraceSource</a></dt>
 			<dd>Windows PowerShell コンポーネントのトレースを構成、開始、および停止します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/set-variable" target="_blank">Set-Variable</a></dt>
 			<dd>変数の値を設定します。指定された名前の変数が存在しない場合は、その名前の変数を作成します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/set-wmiinstance" target="_blank">Set-WmiInstance</a></dt>
-			<dd>WMI クラスのインスタンスを作成または変更します。</dd>
+			<dd>既存の Windows Management Instrumentation (WMI) クラスのインスタンスを作成または更新します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.wsman.management/set-wsmaninstance" target="_blank">Set-WSManInstance</a></dt>
 			<dd>リソースに関連する管理情報を変更します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.wsman.management/set-wsmanquickconfig" target="_blank">Set-WSManQuickConfig</a></dt>
@@ -804,7 +804,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/show-controlpanelitem" target="_blank">Show-ControlPanelItem</a></dt>
 			<dd>コントロール パネル項目を開きます。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/show-eventlog" target="_blank">Show-EventLog</a></dt>
-			<dd>イベント ビューアーでローカルまたはリモート コンピューターのイベント ログを表示します。</dd>
+			<dd>イベント ビューアーでローカル コンピューターまたはリモート コンピューターのイベント ログを表示します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/show-markdown" target="_blank">Show-Markdown</a></dt>
 			<dd>Shows a Markdown file or string in the console in a friendly way using VT100 escape sequences or in a browser using HTML.</dd>
 			<dt><a id="sort" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/sort-object" target="_blank">Sort-Object</a></dt>
@@ -830,7 +830,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.host/start-transcript" target="_blank">Start-Transcript</a></dt>
 			<dd>テキストファイルへの PowerShell セッションのすべてまたは一部のレコードを作成します。</dd>
 			<dt><a id="stop" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/stop-computer" target="_blank">Stop-Computer</a></dt>
-			<dd>ローカルとリモートのコンピューターをシャットダウンします。</dd>
+			<dd>ローカルとリモートのコンピューターを停止 (シャットダウン) します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/psdesiredstateconfiguration/stop-dscconfiguration" target="_blank">Stop-DscConfiguration</a></dt>
 			<dd>Stops a running configuration.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/stop-process" target="_blank">Stop-Process</a></dt>
