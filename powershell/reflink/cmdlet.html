@@ -91,7 +91,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/convertto-json" target="_blank">ConvertTo-Json</a></dt>
 			<dd>オブジェクトを JSON 形式の文字列に変換します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.security/convertto-securestring" target="_blank">ConvertTo-SecureString</a></dt>
-			<dd>暗号化された標準文字列をセキュリティ保護された文字列に変換します。プレーン テキストをセキュリティで保護された文字列に変換することもできます。ConvertFrom-SecureString および Read-Host と組み合わせて使用します。</dd>
+			<dd>暗号化された標準文字列を、セキュリティで保護された文字列に変換します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/convertto-xml" target="_blank">ConvertTo-XML</a></dt>
 			<dd>オブジェクトの表記を XML ベースで作成します。</dd>
 			<dt><a id="copy" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/copy-item" target="_blank">Copy-Item</a></dt>
@@ -221,7 +221,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/format-wide" target="_blank">Format-Wide</a></dt>
 			<dd>オブジェクトを、各オブジェクトのプロパティを 1 つだけ表示する幅広い表として書式設定します。</dd>
 			<dt id="G"><a id="get" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.security/get-acl" target="_blank">Get-Acl</a></dt>
-			<dd>ファイルやレジストリ キーなどのリソースのセキュリティ記述子を取得します。</dd>
+			<dd>ファイル、レジストリ キーなどのリソースのセキュリティ記述子を取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/get-alias" target="_blank">Get-Alias</a></dt>
 			<dd>現在のセッションに対して定義されているすべてのエイリアスを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.security/get-authenticodesignature" target="_blank">Get-AuthenticodeSignature</a></dt>
@@ -246,7 +246,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-clipboard" target="_blank">Get-Clipboard</a></dt>
 			<dd>クリップボードの内容を取得します。 [!NOTE] &gt; Linux で、このコマンドレットでは <code>xclip</code> ユーティリティをパスに配置する必要があります。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.security/get-cmsmessage" target="_blank">Get-CmsMessage</a></dt>
-			<dd>Gets content that has been encrypted by using the Cryptographic Message Syntax format.</dd>
+			<dd>暗号化メッセージ構文形式を使用して暗号化されたコンテンツを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/get-command" target="_blank">Get-Command</a></dt>
 			<dd>すべてのコマンドを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-computerinfo" target="_blank">Get-ComputerInfo</a></dt>
@@ -348,7 +348,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/packagemanagement/get-packagesource" target="_blank">Get-PackageSource</a></dt>
 			<dd>Gets a list of package sources that are registered for a package provider.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.security/get-pfxcertificate" target="_blank">Get-PfxCertificate</a></dt>
-			<dd>コンピューターの .pfx 証明書ファイルに関する情報を取得します。</dd>
+			<dd>コンピューターの PFX 証明書ファイルに関する情報を取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-process" target="_blank">Get-Process</a></dt>
 			<dd>ローカル コンピューターまたはリモート コンピューター上で実行されているプロセスを取得します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/get-psbreakpoint" target="_blank">Get-PSBreakpoint</a></dt>
@@ -503,7 +503,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/new-eventlog" target="_blank">New-EventLog</a></dt>
 			<dd>新しいイベント ログおよび新しいイベント ソースをローカル コンピューターまたはリモート コンピューター上に作成します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.security/new-filecatalog" target="_blank">New-FileCatalog</a></dt>
-			<dd>`New-FileCatalog` creates a catalog file of file hashes that can be used to validate the authenticity of a file.</dd>
+			<dd>指定されたパス内のファイルとフォルダーの暗号化ハッシュを含む Windows カタログファイルを作成します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/new-guid" target="_blank">New-Guid</a></dt>
 			<dd>Creates a GUID.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/ise/new-isesnippet" target="_blank">New-IseSnippet</a></dt>
@@ -594,7 +594,7 @@
 			<dt id="P"><a id="pop" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/pop-location" target="_blank">Pop-Location</a></dt>
 			<dd>現在の場所を、最後にスタックにプッシュした場所に変更します。</dd>
 			<dt><a id="protect" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.security/protect-cmsmessage" target="_blank">Protect-CmsMessage</a></dt>
-			<dd>Encrypts content by using the Cryptographic Message Syntax format.</dd>
+			<dd>暗号化メッセージ構文形式を使用してコンテンツを暗号化します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/psreadline/psconsolehostreadline" target="_blank">PSConsoleHostReadline</a></dt>
 			<dd>The main entry point for PSReadLine.</dd>
 			<dt><a id="publish" href="https://docs.microsoft.com/ja-jp/powershell/module/psdesiredstateconfiguration/publish-dscconfiguration" target="_blank">Publish-DscConfiguration</a></dt>
@@ -729,11 +729,11 @@
 			<dt><a id="send" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/send-mailmessage" target="_blank">Send-MailMessage</a></dt>
 			<dd>電子メール メッセージを送信します。</dd>
 			<dt><a id="set" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.security/set-acl" target="_blank">Set-Acl</a></dt>
-			<dd>指定されたリソース (ファイルやレジストリ キーのセキュリティ記述子) を変更します。</dd>
+			<dd>ファイルやレジストリ キーなど、指定した項目のセキュリティ記述子を変更します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/set-alias" target="_blank">Set-Alias</a></dt>
 			<dd>コマンドレットまたはコマンド要素のエイリアス (別名) を作成または変更します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.security/set-authenticodesignature" target="_blank">Set-AuthenticodeSignature</a></dt>
-			<dd>Authenticode 署名を Windows PowerShell スクリプトまたはその他のファイルに追加します。</dd>
+			<dd>Authenticode 署名を PowerShell スクリプトまたはその他のファイルに追加します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/cimcmdlets/set-ciminstance" target="_blank">Set-CimInstance</a></dt>
 			<dd>Cim クラスの <strong>modifyinstance</strong> メソッドを呼び出すことによって、cim サーバー上の cim インスタンスを変更します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/set-clipboard" target="_blank">Set-Clipboard</a></dt>
@@ -750,7 +750,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/psdesiredstateconfiguration/set-dsclocalconfigurationmanager" target="_blank">Set-DscLocalConfigurationManager</a></dt>
 			<dd>Applies LCM settings to nodes.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.security/set-executionpolicy" target="_blank">Set-ExecutionPolicy</a></dt>
-			<dd>シェルの実行ポリシーに対するユーザー設定を変更します。</dd>
+			<dd>Windows コンピューターの PowerShell 実行ポリシーを設定します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/set-item" target="_blank">Set-Item</a></dt>
 			<dd>項目の値を、コマンドで指定した値に変更します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/set-itemproperty" target="_blank">Set-ItemProperty</a></dt>
@@ -858,7 +858,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/psdesiredstateconfiguration/test-dscconfiguration" target="_blank">Test-DscConfiguration</a></dt>
 			<dd>Tests whether the actual configuration on the nodes matches the desired configuration.</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.security/test-filecatalog" target="_blank">Test-FileCatalog</a></dt>
-			<dd>`Test-FileCatalog` validates whether the hashes contained in a catalog file (.cat) matches the hashes of the actual files in order to validate their authenticity.</dd>
+			<dd>信頼性を検証するために、カタログファイル (.cat) に含まれるハッシュが実際のファイルのハッシュと一致するかどうかを検証します。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/test-json" target="_blank">Test-Json</a></dt>
 			<dd>Tests whether a string is a valid JSON document</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/test-modulemanifest" target="_blank">Test-ModuleManifest</a></dt>
@@ -889,7 +889,7 @@
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/powershellget/uninstall-script" target="_blank">Uninstall-Script</a></dt>
 			<dd>Uninstalls a script file.</dd>
 			<dt><a id="unprotect" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.security/unprotect-cmsmessage" target="_blank">Unprotect-CmsMessage</a></dt>
-			<dd>Decrypts content that has been encrypted by using the Cryptographic Message Syntax format.</dd>
+			<dd>暗号化メッセージの構文形式を使用して暗号化されたコンテンツを復号化します。</dd>
 			<dt><a id="unregister" href="https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/unregister-event" target="_blank">Unregister-Event</a></dt>
 			<dd>イベント サブスクリプションをキャンセルします。</dd>
 			<dt><a href="https://docs.microsoft.com/ja-jp/powershell/module/packagemanagement/unregister-packagesource" target="_blank">Unregister-PackageSource</a></dt>
