@@ -26,3 +26,7 @@ dt, dd {
 dd dl {
 	margin-left: 2em;
 }
+code {
+	border: solid thin;
+	padding: 2px;
+}
