@@ -20,19 +20,19 @@
 				<tr><th>DISM</th><th>PowerShell</th><th>説明</th></tr>
 			</thead>
 			<tbody>
-				<tr><td>DISM /Append-Image</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/add-windowsimage" target="_blank">Add-WindowsImage</a></td><td>追加のイメージを .wim ファイルに追加する</td></tr>
-				<tr><td>DISM /Cleanup-Mountpoints</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/clear-windowscorruptmountpoint" target="_blank">Clear-WindowsCorruptMountPoint</a></td><td>マウントされたイメージで破損しているものに関連付けられているリソースをすべて削除する</td></tr>
-				<tr><td>DISM /Commit-Image</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/save-windowsimage" target="_blank">Save-WindowsImage</a></td><td>加えた変更をマウントされたイメージに適用する</td></tr>
-				<tr><td>DISM /Delete-Image</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/remove-windowsimage" target="_blank">Remove-WindowsImage</a></td><td>複数のボリューム イメージを持つ .wim ファイルから、指定したボリューム イメージを削除する</td></tr>
-				<tr><td>DISM /Export-Image</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/export-windowsimage" target="_blank">Export-WindowsImage</a></td><td>指定したイメージのコピーを別のファイルにエクスポートする</td></tr>
-				<tr><td>DISM /Get-MountedImageInfo</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/get-windowsimage" target="_blank">Get-WindowsImage</a> -Mounted</td><td>現在マウントされているイメージと、マウントされているイメージに関する情報を取得する</td></tr>
+				<tr><td>DISM /Append-Image</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/add-windowsimage" target="_blank">Add-WindowsImage</a></td><td>追加のイメージを .wim ファイルに追加する</td></tr>
+				<tr><td>DISM /Cleanup-Mountpoints</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/clear-windowscorruptmountpoint" target="_blank">Clear-WindowsCorruptMountPoint</a></td><td>マウントされたイメージで破損しているものに関連付けられているリソースをすべて削除する</td></tr>
+				<tr><td>DISM /Commit-Image</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/save-windowsimage" target="_blank">Save-WindowsImage</a></td><td>加えた変更をマウントされたイメージに適用する</td></tr>
+				<tr><td>DISM /Delete-Image</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/remove-windowsimage" target="_blank">Remove-WindowsImage</a></td><td>複数のボリューム イメージを持つ .wim ファイルから、指定したボリューム イメージを削除する</td></tr>
+				<tr><td>DISM /Export-Image</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/export-windowsimage" target="_blank">Export-WindowsImage</a></td><td>指定したイメージのコピーを別のファイルにエクスポートする</td></tr>
+				<tr><td>DISM /Get-MountedImageInfo</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/get-windowsimage" target="_blank">Get-WindowsImage</a> -Mounted</td><td>現在マウントされているイメージと、マウントされているイメージに関する情報を取得する</td></tr>
 				<tr><td>DISM /Get-ImageInfo</a></td><td>Get-WindowsImage -ImagePath</td><td>.wim、.vhd、.vhdx の各ファイルに含まれているイメージに関する情報を取得する</td></tr>
-				<tr><td>DISM /Get-WIMBootEntry</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/get-wimbootentry" target="_blank">Get-WIMBootEntry</a></td><td>指定したディスク ボリュームに関する WIMBoot 構成のエントリを取得する</td></tr>
-				<tr><td>DISM /Mount-Image</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/mount-windowsimage" target="_blank">Mount-WindowsImage</a></td><td>.wim、.vhd、または .vhdx の各ファイルのイメージを、指定したディレクトリにマウントする</td></tr>
+				<tr><td>DISM /Get-WIMBootEntry</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/get-wimbootentry" target="_blank">Get-WIMBootEntry</a></td><td>指定したディスク ボリュームに関する WIMBoot 構成のエントリを取得する</td></tr>
+				<tr><td>DISM /Mount-Image</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/mount-windowsimage" target="_blank">Mount-WindowsImage</a></td><td>.wim、.vhd、または .vhdx の各ファイルのイメージを、指定したディレクトリにマウントする</td></tr>
 				<tr><td>DISM /Remount-Image</td><td>Mount-WindowsImage -Remount</td><td>マウントされていたがアクセスできなくなったイメージをもう一度マウントし、操作できるようにする</td></tr>
-				<tr><td>DISM /Split-Image</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/split-windowsimage" target="_blank">Split-WindowsImage</a></td><td>既にある .wim ファイルを複数の読み取り専用の分割 .swm ファイルに分割する</td></tr>
-				<tr><td>DISM /Unmount-Image</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/dismount-windowsimage" target="_blank">Dismount-WindowsImage</a></td><td>.wim、.vhd、.vhdx などのファイルのマウントを解除し、イメージがマウントされていたとき加えられた変更をコミットまたは破棄する</td></tr>
-				<tr><td>DISM /Update-WIMBootEntry</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/update-wimbootentry" target="_blank">Update-WIMBootEntry</a></td><td>指定したデータ ソース ID、名前を変更したイメージ ファイル、移動したイメージ ファイルのパスに関連する、WIMBoot 構成のエントリを更新する</td></tr>
+				<tr><td>DISM /Split-Image</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/split-windowsimage" target="_blank">Split-WindowsImage</a></td><td>既にある .wim ファイルを複数の読み取り専用の分割 .swm ファイルに分割する</td></tr>
+				<tr><td>DISM /Unmount-Image</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/dismount-windowsimage" target="_blank">Dismount-WindowsImage</a></td><td>.wim、.vhd、.vhdx などのファイルのマウントを解除し、イメージがマウントされていたとき加えられた変更をコミットまたは破棄する</td></tr>
+				<tr><td>DISM /Update-WIMBootEntry</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/update-wimbootentry" target="_blank">Update-WIMBootEntry</a></td><td>指定したデータ ソース ID、名前を変更したイメージ ファイル、移動したイメージ ファイルのパスに関連する、WIMBoot 構成のエントリを更新する</td></tr>
 			</tbody>
 		</table>
 		<table border="1">
@@ -41,15 +41,15 @@
 				<tr><th>DISM</th><th>PowerShell</th><th>説明</th></tr>
 			</thead>
 			<tbody>
-				<tr><td>DISM /Add-Package</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/add-windowspackage" target="_blank">Add-WindowsPackage</a></td><td>指定された .cab または .msu パッケージをイメージにインストールする</td></tr>
-				<tr><td>DISM /Cleanup-Image</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/repair-windowsimage" target="_blank">Repair-WindowsImage</a></td><td>イメージに対してクリーンアップ操作または回復操作を実行する</td></tr>
-				<tr><td>DISM /Disable-Feature</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/disable-windowsoptionalfeature" target="_blank">Disable-WindowsOptionalFeature</a></td><td>イメージ内の指定された機能を無効にする</td></tr>
-				<tr><td>DISM /Enable-Feature</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/enable-windowsoptionalfeature" target="_blank">Enable-WindowsOptionalFeature</a></td><td>指定されたイメージ内の機能を有効にするか、または更新する</td></tr>
-				<tr><td>DISM /Get-Features</td><td rowspan="2"><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/get-windowsoptionalfeature" target="_blank">Get-WindowsOptionalFeature</a></td><td>パッケージ内のすべての機能に関する基本情報を表示する</td></tr>
+				<tr><td>DISM /Add-Package</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/add-windowspackage" target="_blank">Add-WindowsPackage</a></td><td>指定された .cab または .msu パッケージをイメージにインストールする</td></tr>
+				<tr><td>DISM /Cleanup-Image</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/repair-windowsimage" target="_blank">Repair-WindowsImage</a></td><td>イメージに対してクリーンアップ操作または回復操作を実行する</td></tr>
+				<tr><td>DISM /Disable-Feature</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/disable-windowsoptionalfeature" target="_blank">Disable-WindowsOptionalFeature</a></td><td>イメージ内の指定された機能を無効にする</td></tr>
+				<tr><td>DISM /Enable-Feature</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/enable-windowsoptionalfeature" target="_blank">Enable-WindowsOptionalFeature</a></td><td>指定されたイメージ内の機能を有効にするか、または更新する</td></tr>
+				<tr><td>DISM /Get-Features</td><td rowspan="2"><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/get-windowsoptionalfeature" target="_blank">Get-WindowsOptionalFeature</a></td><td>パッケージ内のすべての機能に関する基本情報を表示する</td></tr>
 				<tr><td>DISM /Get-FeatureInfo</td><td>機能の詳細情報を表示する</td></tr>
-				<tr><td>DISM /Get-Packages</td><td rowspan="2"><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/get-windowspackage" target="_blank">Get-WindowsPackage</a></td><td>イメージ内のすべてのパッケージに関する基本情報を表示する</td></tr>
+				<tr><td>DISM /Get-Packages</td><td rowspan="2"><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/get-windowspackage" target="_blank">Get-WindowsPackage</a></td><td>イメージ内のすべてのパッケージに関する基本情報を表示する</td></tr>
 				<tr><td>DISM /Get-PackageInfo</td><td>.cab ファイルとして提供されたパッケージの詳細情報を表示する</td></tr>
-				<tr><td>DISM /Remove-Package</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/remove-windowspackage" target="_blank">Remove-WindowsPackage</a></td><td>指定された .cab ファイル パッケージをイメージから削除する</td></tr>
+				<tr><td>DISM /Remove-Package</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/remove-windowspackage" target="_blank">Remove-WindowsPackage</a></td><td>指定された .cab ファイル パッケージをイメージから削除する</td></tr>
 			</tbody>
 		</table>
 		<table border="1">
@@ -58,10 +58,10 @@
 				<tr><th>DISM</th><th>PowerShell</th><th>説明</th></tr>
 			</thead>
 			<tbody>
-				<tr><td>DISM /Add-Capability</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/add-windowscapability" target="_blank">Add-WindowsCapability</a></td><td>機能をイメージに追加する</td></tr>
-				<tr><td>DISM /Get-Capabilities</td><td rowspan="2"><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/get-windowscapability" target="_blank">Get-WindowsCapability</a></td><td>イメージ内の機能を取得する</td></tr>
+				<tr><td>DISM /Add-Capability</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/add-windowscapability" target="_blank">Add-WindowsCapability</a></td><td>機能をイメージに追加する</td></tr>
+				<tr><td>DISM /Get-Capabilities</td><td rowspan="2"><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/get-windowscapability" target="_blank">Get-WindowsCapability</a></td><td>イメージ内の機能を取得する</td></tr>
 				<tr><td>DISM /Get-CapabilityInfo</td><td>特定のドライバーに関する情報を取得する</td></tr>
-				<tr><td>DISM /Remove-Capability</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/remove-windowscapability" target="_blank">Remove-WindowsCapability</a></td><td>機能をイメージから削除する</td></tr>
+				<tr><td>DISM /Remove-Capability</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/remove-windowscapability" target="_blank">Remove-WindowsCapability</a></td><td>機能をイメージから削除する</td></tr>
 			</tbody>
 		</table>
 		<table border="1">
@@ -70,10 +70,10 @@
 				<tr><th>DISM</th><th>PowerShell</th><th>説明</th></tr>
 			</thead>
 			<tbody>
-				<tr><td>DISM /Add-ProvisionedAppxPackage</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/add-appxprovisionedpackage" target="_blank">Add-AppxProvisionedPackage</a></td><td>イメージにアプリ パッケージを追加する</td></tr>
-				<tr><td>DISM /Get-ProvisionedAppxPackages</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/get-appxprovisionedpackage" target="_blank">Get-AppxProvisionedPackage</a></td><td>新しいユーザーごとにインストールするよう設定されたイメージ内のアプリ パッケージに関する情報を取得する</td></tr>
-				<tr><td>DISM /Remove-ProvisionedAppxPackage</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/remove-appxprovisionedpackage" target="_blank">Remove-AppxProvisionedPackage</a></td><td>アプリ パッケージのプロビジョニングをイメージから削除する</td></tr>
-				<tr><td>DISM /Set-ProvisionedAppxDataFile</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/set-appxprovisioneddatafile" target="_blank">Set-AppXProvisionedDataFile</a></td><td>指定されたアプリ パッケージにカスタム データ ファイルを追加する</td></tr>
+				<tr><td>DISM /Add-ProvisionedAppxPackage</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/add-appxprovisionedpackage" target="_blank">Add-AppxProvisionedPackage</a></td><td>イメージにアプリ パッケージを追加する</td></tr>
+				<tr><td>DISM /Get-ProvisionedAppxPackages</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/get-appxprovisionedpackage" target="_blank">Get-AppxProvisionedPackage</a></td><td>新しいユーザーごとにインストールするよう設定されたイメージ内のアプリ パッケージに関する情報を取得する</td></tr>
+				<tr><td>DISM /Remove-ProvisionedAppxPackage</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/remove-appxprovisionedpackage" target="_blank">Remove-AppxProvisionedPackage</a></td><td>アプリ パッケージのプロビジョニングをイメージから削除する</td></tr>
+				<tr><td>DISM /Set-ProvisionedAppxDataFile</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/set-appxprovisioneddatafile" target="_blank">Set-AppXProvisionedDataFile</a></td><td>指定されたアプリ パッケージにカスタム データ ファイルを追加する</td></tr>
 			</tbody>
 		</table>
 		<table border="1">
@@ -82,9 +82,9 @@
 				<tr><th>DISM</th><th>PowerShell</th><th>説明</th></tr>
 			</thead>
 			<tbody>
-				<tr><td>DISM /Get-CurrentEdition</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/get-windowsedition" target="_blank">Get-WindowsEdition</a></td><td>指定されたイメージのエディションを取得する</td></tr>
-				<tr><td>DISM /Set-Edition</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/set-windowsedition" target="_blank">Set-WindowsEdition</a></td><td>Windows イメージを上位のエディションに変更する</td></tr>
-				<tr><td>DISM /Set-ProductKey</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/set-windowsproductkey" target="_blank">Set-WindowsProductKey</a></td><td>Windows イメージ内の現在のエディションのプロダクト キーを入力する</td></tr>
+				<tr><td>DISM /Get-CurrentEdition</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/get-windowsedition" target="_blank">Get-WindowsEdition</a></td><td>指定されたイメージのエディションを取得する</td></tr>
+				<tr><td>DISM /Set-Edition</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/set-windowsedition" target="_blank">Set-WindowsEdition</a></td><td>Windows イメージを上位のエディションに変更する</td></tr>
+				<tr><td>DISM /Set-ProductKey</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/set-windowsproductkey" target="_blank">Set-WindowsProductKey</a></td><td>Windows イメージ内の現在のエディションのプロダクト キーを入力する</td></tr>
 			</tbody>
 		</table>
 		<table border="1">
@@ -93,11 +93,11 @@
 				<tr><th>DISM</th><th>PowerShell</th><th>説明</th></tr>
 			</thead>
 			<tbody>
-				<tr><td>DISM /Add-Driver</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/add-windowsdriver" target="_blank">Add-WindowsDriver</a></td><td>サードパーティ ドライバー パッケージをオフラインの Windows イメージに追加する</td></tr>
-				<tr><td>DISM /Export-Driver</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/export-windowsdriver" target="_blank">Export-WindowsDriver</a></td><td>すべてのサードパーティ ドライバー パッケージを Windows イメージから対象のパスにエクスポートする</td></tr>
-				<tr><td>DISM /Get-Drivers</td><td rowspan="2"><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/get-windowsdriver" target="_blank">Get-WindowsDriver</a></td><td>イメージ内のドライバー パッケージに関する基本情報を取得する</td></tr>
+				<tr><td>DISM /Add-Driver</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/add-windowsdriver" target="_blank">Add-WindowsDriver</a></td><td>サードパーティ ドライバー パッケージをオフラインの Windows イメージに追加する</td></tr>
+				<tr><td>DISM /Export-Driver</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/export-windowsdriver" target="_blank">Export-WindowsDriver</a></td><td>すべてのサードパーティ ドライバー パッケージを Windows イメージから対象のパスにエクスポートする</td></tr>
+				<tr><td>DISM /Get-Drivers</td><td rowspan="2"><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/get-windowsdriver" target="_blank">Get-WindowsDriver</a></td><td>イメージ内のドライバー パッケージに関する基本情報を取得する</td></tr>
 				<tr><td>DISM /Get-DriverInfo</td><td>特定のドライバー パッケージに関する詳細情報を取得する</td></tr>
-				<tr><td>DISM /Remove-Driver</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/remove-windowsdriver" target="_blank">Remove-WindowsDriver</a></td><td>サードパーティ ドライバーをオフライン イメージから削除する</td></tr>
+				<tr><td>DISM /Remove-Driver</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/remove-windowsdriver" target="_blank">Remove-WindowsDriver</a></td><td>サードパーティ ドライバーをオフライン イメージから削除する</td></tr>
 			</tbody>
 		</table>
 		<table border="1">
@@ -106,7 +106,7 @@
 				<tr><th>DISM</th><th>PowerShell</th><th>説明</th></tr>
 			</thead>
 			<tbody>
-				<tr><td>DISM /Apply-Unattend</td><td><a href="https://docs.microsoft.com/ja-jp/powershell/module/dism/use-windowsunattend" target="_blank">Use-WindowsUnattend</a></td><td>イメージに Unattend.xml ファイルを適用する</td></tr>
+				<tr><td>DISM /Apply-Unattend</td><td><a href="https://learn.microsoft.com/ja-jp/powershell/module/dism/use-windowsunattend" target="_blank">Use-WindowsUnattend</a></td><td>イメージに Unattend.xml ファイルを適用する</td></tr>
 			</tbody>
 		</table>
 	</body>
