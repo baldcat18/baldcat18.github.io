@@ -204,6 +204,8 @@
 			<dd>使用可能なパッケージソース内のソフトウェアパッケージを検索します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/packagemanagement/find-packageprovider" target="_blank">Find-PackageProvider</a></dt>
 			<dd>インストールに使用できる Package Management パッケージプロバイダーの一覧を返します。</dd>
+			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.psresourceget/find-psresource" target="_blank">Find-PSResource</a></dt>
+			<dd>名前やその他のパッケージ プロパティに基づいて、リポジトリ (ローカルまたはリモート) からパッケージを検索します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/powershellget/find-rolecapability" target="_blank">Find-RoleCapability</a></dt>
 			<dd>モジュール内のロール機能を検索します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/powershellget/find-script" target="_blank">Find-Script</a></dt>
@@ -304,6 +306,8 @@
 			<dd>ローカルコンピューターまたはリモートコンピューターにインストールされている修正プログラムを取得します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/powershellget/get-installedmodule" target="_blank">Get-InstalledModule</a></dt>
 			<dd>PowerShellGet によってインストールされたコンピューター上のモジュールの一覧を取得します。</dd>
+			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.psresourceget/get-installedpsresource" target="_blank">Get-InstalledPSResource</a></dt>
+			<dd><strong>PowerShellGet</strong> を使用して、コンピューターにインストールされているモジュールとスクリプトを返します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/powershellget/get-installedscript" target="_blank">Get-InstalledScript</a></dt>
 			<dd>インストールされているスクリプトを取得します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/ise/get-isesnippet" target="_blank">Get-IseSnippet</a></dt>
@@ -367,6 +371,10 @@
 			<dd>構成可能なオプションの値を取得します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/powershellget/get-psrepository" target="_blank">Get-PSRepository</a></dt>
 			<dd>PowerShell リポジトリを取得します。</dd>
+			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.psresourceget/get-psresourcerepository" target="_blank">Get-PSResourceRepository</a></dt>
+			<dd>登録済みのリポジトリ情報を検索して返します。</dd>
+			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.psresourceget/get-psscriptfileinfo" target="_blank">Get-PSScriptFileInfo</a></dt>
+			<dd>スクリプトのメタデータを返します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/get-pssession" target="_blank">Get-PSSession</a></dt>
 			<dd>ローカルコンピューターとリモートコンピューター上の PowerShell セッションを取得します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/get-pssessioncapability" target="_blank">Get-PSSessionCapability</a></dt>
@@ -385,6 +393,8 @@
 			<dd>ローカル コンピューター上のスケジュールされたジョブを取得します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/psscheduledjob/get-scheduledjoboption" target="_blank">Get-ScheduledJobOption</a></dt>
 			<dd>スケジュールされたジョブのジョブ オプションを取得します。</dd>
+			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/get-securerandom" target="_blank">Get-SecureRandom</a></dt>
+			<dd>乱数を取得するか、オブジェクトをコレクションからランダムに選択します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-service" target="_blank">Get-Service</a></dt>
 			<dd>コンピューター上のサービスを取得します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-timezone" target="_blank">Get-TimeZone</a></dt>
@@ -435,6 +445,8 @@
 			<dd>パッケージ管理パッケージ プロバイダーを現在のセッションに追加します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/import-powershelldatafile" target="_blank">Import-PowerShellDataFile</a></dt>
 			<dd><code>.PSD1</code> ファイルから内容を呼び出さずに値をインポートします。</dd>
+			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.psresourceget/import-psgetrepository" target="_blank">Import-PSGetRepository</a></dt>
+			<dd>PowerShellGet に登録されているリポジトリを検索し、PSResourceGet に登録します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/import-pssession" target="_blank">Import-PSSession</a></dt>
 			<dd>別のセッションから現在のセッションにコマンドをインポートします。</dd>
 			<dt><a id="install" href="https://learn.microsoft.com/ja-jp/powershell/module/powershellget/install-module" target="_blank">Install-Module</a></dt>
@@ -443,6 +455,8 @@
 			<dd>1 つ以上のソフトウェア パッケージをインストールします。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/packagemanagement/install-packageprovider" target="_blank">Install-PackageProvider</a></dt>
 			<dd>1 つ以上のパッケージ管理パッケージ プロバイダーをインストールします。</dd>
+			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.psresourceget/install-psresource" target="_blank">Install-PSResource</a></dt>
+			<dd>登録済みリポジトリからリソースをインストールします。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/powershellget/install-script" target="_blank">Install-Script</a></dt>
 			<dd>スクリプトをインストールします。</dd>
 			<dt><a id="invoke" href="https://learn.microsoft.com/ja-jp/powershell/module/psworkflowutility/invoke-asworkflow" target="_blank">Invoke-AsWorkflow</a></dt>
@@ -545,6 +559,8 @@
 			<dd>アイテム データ ストア内の場所に関連付けられている一時ドライブと永続ドライブを作成します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/new-psrolecapabilityfile" target="_blank">New-PSRoleCapabilityFile</a></dt>
 			<dd>セッション構成を通じて公開される一連の機能を定義するファイルを作成します。</dd>
+			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.psresourceget/new-psscriptfileinfo" target="_blank">New-PSScriptFileInfo</a></dt>
+			<dd>コマンドレットは、スクリプトに関するメタデータを含む新しいスクリプト ファイルを作成します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/new-pssession" target="_blank">New-PSSession</a></dt>
 			<dd>ローカル コンピューターまたはリモート コンピューターへの永続的な接続を作成します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/new-pssessionconfigurationfile" target="_blank">New-PSSessionConfigurationFile</a></dt>
@@ -601,6 +617,8 @@
 			<dd>DSC 構成を一連のコンピューターに発行します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/powershellget/publish-module" target="_blank">Publish-Module</a></dt>
 			<dd>指定したモジュールをローカル コンピューターからオンライン ギャラリーに発行します。</dd>
+			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.psresourceget/publish-psresource" target="_blank">Publish-PSResource</a></dt>
+			<dd>指定したモジュールをローカル コンピューターから PSResource リポジトリに発行します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/powershellget/publish-script" target="_blank">Publish-Script</a></dt>
 			<dd>スクリプトを発行します。</dd>
 			<dt><a id="push" href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/push-location" target="_blank">Push-Location</a></dt>
@@ -623,6 +641,8 @@
 			<dd>指定したパッケージプロバイダーのパッケージソースを追加します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/powershellget/register-psrepository" target="_blank">Register-PSRepository</a></dt>
 			<dd>PowerShell リポジトリを登録します。</dd>
+			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.psresourceget/register-psresourcerepository" target="_blank">Register-PSResourceRepository</a></dt>
+			<dd>PowerShell リソースのリポジトリを登録します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/register-pssessionconfiguration" target="_blank">Register-PSSessionConfiguration</a></dt>
 			<dd>新しいセッション構成を作成して登録します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/psscheduledjob/register-scheduledjob" target="_blank">Register-ScheduledJob</a></dt>
@@ -718,6 +738,8 @@
 			<dd>モジュールとその依存関係をローカルコンピューターに保存しますが、モジュールはインストールしません。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/packagemanagement/save-package" target="_blank">Save-Package</a></dt>
 			<dd>パッケージをインストールせずにローカルコンピューターに保存します。</dd>
+			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.psresourceget/save-psresource" target="_blank">Save-PSResource</a></dt>
+			<dd>登録済みリポジトリからマシンにリソース (モジュールとスクリプト) を保存します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/powershellget/save-script" target="_blank">Save-Script</a></dt>
 			<dd>スクリプトを保存します。</dd>
 			<dt><a id="select" href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/select-object" target="_blank">Select-Object</a></dt>
@@ -779,6 +801,8 @@
 			<dd><strong>Psreadline</strong> でのコマンドライン編集の動作をカスタマイズします。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/powershellget/set-psrepository" target="_blank">Set-PSRepository</a></dt>
 			<dd>登録済みリポジトリの値を設定します。</dd>
+			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.psresourceget/set-psresourcerepository" target="_blank">Set-PSResourceRepository</a></dt>
+			<dd>登録済みリポジトリの情報を設定します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/set-pssessionconfiguration" target="_blank">Set-PSSessionConfiguration</a></dt>
 			<dd>登録済みのセッション構成のプロパティを変更します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/psscheduledjob/set-scheduledjob" target="_blank">Set-ScheduledJob</a></dt>
@@ -872,6 +896,8 @@
 					<dd>ファイルまたはディレクトリ パスのすべての要素が存在するかどうかを確認します。</dd>
 				</dl>
 			</dd>
+			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.psresourceget/test-psscriptfileinfo" target="_blank">Test-PSScriptFileInfo</a></dt>
+			<dd><code>.ps1</code> ファイル内のコメント ベースのメタデータをテストして、公開に対して有効であることを確認します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/test-pssessionconfigurationfile" target="_blank">Test-PSSessionConfigurationFile</a></dt>
 			<dd>セッション構成ファイル内のキーと値を確認します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/powershellget/test-scriptfileinfo" target="_blank">Test-ScriptFileInfo</a></dt>
@@ -888,6 +914,8 @@
 			<dd>モジュールをアンインストールします。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/packagemanagement/uninstall-package" target="_blank">Uninstall-Package</a></dt>
 			<dd>1つまたは複数のソフトウェアパッケージをアンインストールします。</dd>
+			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.psresourceget/uninstall-psresource" target="_blank">Uninstall-PSResource</a></dt>
+			<dd><strong>PowerShellGet</strong> を使用してインストールされたリソースをアンインストールします。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/powershellget/uninstall-script" target="_blank">Uninstall-Script</a></dt>
 			<dd>スクリプトをアンインストールします。</dd>
 			<dt><a id="unprotect" href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.security/unprotect-cmsmessage" target="_blank">Unprotect-CmsMessage</a></dt>
@@ -898,6 +926,8 @@
 			<dd>登録されているパッケージソースを削除します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/powershellget/unregister-psrepository" target="_blank">Unregister-PSRepository</a></dt>
 			<dd>リポジトリの登録を解除します。</dd>
+			<dt><a href=https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.psresourceget/unregister-psresourcerepository"" target="_blank">Unregister-PSResourceRepository</a></dt>
+			<dd>登録済みのリポジトリをローカル コンピューターから削除します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/unregister-pssessionconfiguration" target="_blank">Unregister-PSSessionConfiguration</a></dt>
 			<dd>登録されたセッション構成をコンピューターから削除します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/psscheduledjob/unregister-scheduledjob" target="_blank">Unregister-ScheduledJob</a></dt>
@@ -914,6 +944,12 @@
 			<dd>指定したモジュールの最新バージョンをオンライン ギャラリーからダウンロードし、ローカル コンピューターにインストールします。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/powershellget/update-modulemanifest" target="_blank">Update-ModuleManifest</a></dt>
 			<dd>モジュール マニフェスト ファイルを更新します。</dd>
+			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.psresourceget/update-psmodulemanifest" target="_blank">Update-PSModuleManifest</a></dt>
+			<dd>モジュール マニフェスト ファイルを更新します。</dd>
+			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.psresourceget/update-psresource" target="_blank">Update-PSResource</a></dt>
+			<dd>ローカル コンピューターに既にインストールされているパッケージの最新バージョンをダウンロードしてインストールします。</dd>
+			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.psresourceget/update-psscriptfileinfo" target="_blank">Update-PSScriptFileInfo</a></dt>
+			<dd>このコマンドレットは、既存のスクリプト <code>.ps1</code> ファイル内のコメントベースのメタデータを更新します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/powershellget/update-script" target="_blank">Update-Script</a></dt>
 			<dd>スクリプトを更新します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/powershellget/update-scriptfileinfo" target="_blank">Update-ScriptFileInfo</a></dt>
