@@ -10,7 +10,7 @@
 		<nav><a href="index.html">PowerShell リファレンスへのリンク</a> &gt; コマンドレットのヘルプ トピック</nav>
 		<hr>
 		<p>PowerShell と共にインストールされるコマンドレットや高度な関数のヘルプ トピックへのリンク集です。</p>
-		<p><a href="#A">A</a> / B / <a href="#C">C</a> / <a href="#D">D</a> / <a href="#E">E</a> / <a href="#F">F</a> / <a href="#G">G</a> / H / <a href="#I">I</a> / <a href="#J">J</a> / K / <a href="#L">L</a> / <a href="#M">M</a> / <a href="#N">N</a> / <a href="#O">O</a> / <a href="#P">P</a> / Q / <a href="#R">R</a> / <a href="#S">S</a> / <a href="#T">T</a> / <a href="#U">U</a> / V / <a href="#W">W</a> / X / Y / Z</p>
+		<p><a href="#A">A</a> / <a href="#B">B</a> / <a href="#C">C</a> / <a href="#D">D</a> / <a href="#E">E</a> / <a href="#F">F</a> / <a href="#G">G</a> / H / <a href="#I">I</a> / <a href="#J">J</a> / K / <a href="#L">L</a> / <a href="#M">M</a> / <a href="#N">N</a> / <a href="#O">O</a> / <a href="#P">P</a> / Q / <a href="#R">R</a> / <a href="#S">S</a> / <a href="#T">T</a> / <a href="#U">U</a> / V / <a href="#W">W</a> / X / Y / Z</p>
 		<dl>
 			<dt id="A"><a id="add" href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/add-computer" target="_blank">Add-Computer</a></dt>
 			<dd>ローカル コンピューターをドメインまたはワークグループに追加します。</dd>
@@ -33,6 +33,18 @@
 			<dd>現在のセッションに 1 つまたは複数の Windows PowerShell スナップインを追加します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/add-type" target="_blank">Add-Type</a></dt>
 			<dd>PowerShell セッションに Microsoft .NET コアクラスを追加します。</dd>
+			<dt><a href="https://pester.dev/docs/commands/AfterAll" target="_blank">AfterAll</a></dt>
+			<dd>Defines a series of steps to perform at the end of the current container, Context or Describe block.</dd>
+			<dt><a href="https://pester.dev/docs/commands/AfterEach" target="_blank">AfterEach</a></dt>
+			<dd>Defines a series of steps to perform at the end of every It block within the current Context or Describe block.</dd>
+			<dt><a id="assert" href="https://pester.dev/docs/commands/Assert-MockCalled" target="_blank">Assert-MockCalled</a></dt>
+			<dd>Checks if a Mocked command has been called a certain number of times and throws an exception if it has not.</dd>
+			<dt><a href="https://pester.dev/docs/commands/Assert-VerifiableMock" target="_blank">Assert-VerifiableMock</a></dt>
+			<dd>Checks if all verifiable Mocks has been called at least once.</dd>
+			<dt id="B"><a href="https://pester.dev/docs/commands/BeforeAll" target="_blank">BeforeAll</a></dt>
+			<dd>Defines a series of steps to perform at the beginning of the current container, Context or Describe block.</dd>
+			<dt><a href="https://pester.dev/docs/commands/BeforeEach" target="_blank">BeforeEach</a></dt>
+			<dd>Defines a series of steps to perform at the beginning of every It block within the current Context or Describe block.</dd>
 			<dt id="C"><a id="checkpoint" href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/checkpoint-computer" target="_blank">Checkpoint-Computer</a></dt>
 			<dd>ローカル コンピューターのシステム復元ポイントを作成します。</dd>
 			<dt><a id="clear" href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/clear-content" target="_blank">Clear-Content</a></dt>
@@ -66,6 +78,8 @@
 			<dd>切断されたセッションに再接続します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.wsman.management/connect-wsman" target="_blank">Connect-WSMan</a></dt>
 			<dd>リモート コンピューター上の WinRM サービスに接続します。</dd>
+			<dt><a href="https://pester.dev/docs/commands/Context" target="_blank">Context</a></dt>
+			<dd>Provides logical grouping of It blocks within a single Describe block.</dd>
 			<dt><a id="convert" href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/convert-path" target="_blank">Convert-Path</a></dt>
 			<dd>PowerShell パスから PowerShell プロバイダーパスへのパスを変換します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/convert-string" target="_blank">Convert-String</a></dt>
@@ -104,6 +118,8 @@
 			<dd>ローカル コンピューター上で実行中の 1 つ以上のプロセスをデバッグします。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/debug-runspace" target="_blank">Debug-Runspace</a></dt>
 			<dd>実行空間を使用して、対話型デバッグセッションを開始します。</dd>
+			<dt><a href="https://pester.dev/docs/commands/Describe" target="_blank">Describe</a></dt>
+			<dd>Creates a logical group of tests.</dd>
 			<dt><a id="disable" href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/disable-computerrestore" target="_blank">Disable-ComputerRestore</a></dt>
 			<dd>指定したファイル システム ドライブのシステム復元機能を無効にします。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/psdesiredstateconfiguration/disable-dscdebug" target="_blank">Disable-DscDebug</a></dt>
@@ -453,6 +469,8 @@
 			<dd>PowerShellGet に登録されているリポジトリを検索し、PSResourceGet に登録します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/import-pssession" target="_blank">Import-PSSession</a></dt>
 			<dd>別のセッションから現在のセッションにコマンドをインポートします。</dd>
+			<dt><a href="https://pester.dev/docs/commands/InModuleScope" target="_blank">InModuleScope</a></dt>
+			<dd>Allows you to execute parts of a test script within the scope of a PowerShell script or manifest module.</dd>
 			<dt><a id="install" href="https://learn.microsoft.com/ja-jp/powershell/module/powershellget/install-module" target="_blank">Install-Module</a></dt>
 			<dd>リポジトリから 1 つ以上のモジュールをダウンロードし、ローカル コンピューターにインストールします。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/packagemanagement/install-package" target="_blank">Install-Package</a></dt>
@@ -479,6 +497,8 @@
 			<dd>指定した項目に対して、既定のアクションを実行します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.operation.validation/invoke-operationvalidation" target="_blank">Invoke-OperationValidation</a></dt>
 			<dd>Operation Validation Framework テストを呼び出します。</dd>
+			<dt><a href="https://pester.dev/docs/commands/Invoke-Pester" target="_blank">Invoke-Pester</a></dt>
+			<dd>Runs Pester tests</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/invoke-restmethod" target="_blank">Invoke-RestMethod</a></dt>
 			<dd>RESTful Web サービスに HTTP または HTTPS 要求を送信します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/invoke-webrequest" target="_blank">Invoke-WebRequest</a></dt>
@@ -491,12 +511,16 @@
 			<dd>パスと子パスを 1 つのパスに結合します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/join-string" target="_blank">Join-String</a></dt>
 			<dd>パイプラインのオブジェクトを1つの文字列に結合します。</dd>
+			<dt><a href="https://pester.dev/docs/commands/It" target="_blank">It</a></dt>
+			<dd>Validates the results of a test inside of a Describe block.</dd>
 			<dt id="L"><a id="limit" href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/limit-eventlog" target="_blank">Limit-EventLog</a></dt>
 			<dd>イベント ログのサイズおよびエントリの期間を制限するイベント ログ プロパティを設定します。</dd>
 			<dt id="M"><a id="measure" href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/measure-command" target="_blank">Measure-Command</a></dt>
 			<dd>スクリプト ブロックとコマンドレットの実行に要する時間を計測します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/measure-object" target="_blank">Measure-Object</a></dt>
 			<dd>オブジェクトの数値プロパティと、テキストのファイルなど文字列オブジェクト内の文字、単語、および行を計算します。</dd>
+			<dt><a href="https://pester.dev/docs/commands/Mock" target="_blank">Mock</a></dt>
+			<dd>Mocks the behavior of an existing command with an alternate implementation.</dd>
 			<dt><a id="move" href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/move-item" target="_blank">Move-Item</a></dt>
 			<dd>項目をある場所から別の場所に移動します。
 				<dl>
@@ -522,6 +546,8 @@
 			<dd>新しいイベント ログおよび新しいイベント ソースをローカル コンピューターまたはリモート コンピューター上に作成します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.security/new-filecatalog" target="_blank">New-FileCatalog</a></dt>
 			<dd><code>New-FileCatalog</code> は、ファイルの信頼性を検証するために使用できるファイル ハッシュのカタログ ファイルを作成します。</dd>
+			<dt><a href="https://pester.dev/docs/commands/New-Fixture" target="_blank">New-Fixture</a></dt>
+			<dd>This function generates two scripts, one that defines a function and another one that contains its tests.</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/new-guid" target="_blank">New-Guid</a></dt>
 			<dd>GUID を作成します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/ise/new-isesnippet" target="_blank">New-IseSnippet</a></dt>
@@ -829,6 +855,8 @@
 			<dd>リソースに関連する管理情報を変更します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.wsman.management/set-wsmanquickconfig" target="_blank">Set-WSManQuickConfig</a></dt>
 			<dd>ローカル コンピューターをリモート管理用に構成します。</dd>
+			<dt><a href="https://pester.dev/docs/commands/Should" target="_blank">Should</a></dt>
+			<dd>Should is a keyword that is used to define an assertion inside an It block.</dd>
 			<dt><a id="show" href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/show-command" target="_blank">Show-Command</a></dt>
 			<dd>PowerShell コマンド情報をグラフィカル ウィンドウに表示します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/show-controlpanelitem" target="_blank">Show-ControlPanelItem</a></dt>
