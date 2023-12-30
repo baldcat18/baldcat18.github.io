@@ -16,7 +16,7 @@
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_aliases" target="_blank">about_Aliases</a></dt>
 			<dd>PowerShell のコマンドレットとコマンドに代替名を使用する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_ansi_terminals" target="_blank">about_ANSI_Terminals</a></dt>
-			<dd>PowerShell には、PowerShell をホストしているターミナル アプリケーションでの出力のレンダリングを制御するための ANSI エスケープ シーケンスの使用をサポートする多くの機能があります。</dd>
+			<dd>PowerShell で ANSI エスケープ シーケンスで使用できるサポートについて説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_arithmetic_operators" target="_blank">about_Arithmetic_Operators</a></dt>
 			<dd>PowerShell で算術演算を実行する演算子について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_arrays" target="_blank">about_Arrays</a></dt>
@@ -24,11 +24,11 @@
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_assignment_operators" target="_blank">about_Assignment_Operators</a></dt>
 			<dd>演算子を使用して変数に値を割り当てる方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_automatic_variables" target="_blank">about_Automatic_Variables</a></dt>
-			<dd>PowerShell の状態情報を格納する変数について説明します。 これらの変数は、PowerShell によって作成および管理されます。</dd>
+			<dd>PowerShell で作成およびメイン状態情報を格納する変数について説明します。 概念的には、これらの変数のほとんどは読み取り専用と見なされます。 書き込み可能であっても、下位互換性のために書き込むべきではありません。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_booleans" target="_blank">about_Booleans</a></dt>
-			<dd>PowerShell では、暗黙的に任意の型を ブール値 として扱うことができます。 他の型を ブール 値に変換するために PowerShell で使用されるルールを理解することが重要です。</dd>
+			<dd>ブール式の評価方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_break" target="_blank">about_Break</a></dt>
-			<dd>Foreach、For、While、Do、Switch の各ステートメントをすぐに終了するために使用できるステートメントについて説明します。</dd>
+			<dd>現在の制御ブロックを終了する方法を提供する <code>break</code> ステートメントについて説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_built-in_functions" target="_blank">about_Built-in_Functions</a></dt>
 			<dd>PowerShell の組み込み関数について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_calling_generic_methods" target="_blank">about_Calling_Generic_Methods</a></dt>
@@ -38,7 +38,7 @@
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/psworkflow/about/about_checkpoint-workflow" target="_blank">about_Checkpoint-Workflow</a></dt>
 			<dd>ワークフローのチェックポイントを取得する Checkpoint-Workflow アクティビティについて説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_calculated_properties" target="_blank">about_Calculated_Properties</a></dt>
-			<dd>PowerShell では、新しいプロパティを動的に追加したり、パイプラインに出力されるオブジェクトの書式を変更したりできます。</dd>
+			<dd>PowerShell では、新しいプロパティを動的に追加し、パイプラインに出力されるオブジェクトの書式設定を変更できます。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_character_encoding" target="_blank">about_Character_Encoding</a></dt>
 			<dd>PowerShell が文字列データの入力と出力に文字エンコーディングを使用する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_cimsession" target="_blank">about_CimSession</a></dt>
@@ -64,9 +64,9 @@
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_commonparameters" target="_blank">about_CommonParameters</a></dt>
 			<dd>任意のコマンドレットで使用できるパラメーターについて説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_comparison_operators" target="_blank">about_Comparison_Operators</a></dt>
-			<dd>PowerShell の値を比較する演算子について説明します。</dd>
+			<dd>PowerShell の比較演算子は、2 つの値を比較するか、コレクションの要素を入力値とフィルター処理できます。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_continue" target="_blank">about_Continue</a></dt>
-			<dd>ステートメントがプログラム <code>Continue</code> のループの先頭にプログラムフローを直ちに返す方法について説明します。</dd>
+			<dd><code>continue</code> ステートメントがプログラム ループ、 <code>switch</code> ステートメント、または <code>trap</code> ステートメントの先頭にプログラム フローをすぐに返す方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_core_commands" target="_blank">about_Core_Commands</a></dt>
 			<dd>PowerShell プロバイダーで使用できるように設計されたコマンドレットの一覧を示します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_data_files" target="_blank">about_Data_Files</a></dt>
@@ -76,17 +76,17 @@
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_debuggers" target="_blank">about_Debuggers</a></dt>
 			<dd>PowerShell デバッガーについて説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_do" target="_blank">about_Do</a></dt>
-			<dd>While または Until 条件に従って、ステートメントリストを1回以上実行します。</dd>
+			<dd>While または Until 条件に従って、1 つまたは複数のステートメントリストを1回以上実行します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_desiredstateconfiguration" target="_blank">about_DesiredStateConfiguration</a></dt>
 			<dd>PowerShell Desired State Configuration (DSC) 機能について簡単に説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_enum" target="_blank">about_Enum</a></dt>
-			<dd><code>enum</code>ステートメントは、列挙型を宣言するために使用されます。 列挙体は、列挙子リストと呼ばれる一連の名前付きラベルで構成される別個の型です。</dd>
+			<dd><code>enum</code>ステートメントは列挙型を宣言します。 列挙型は、列挙子リストと呼ばれる名前付きラベルのセットで構成される個別の型です。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_environment_variables" target="_blank">about_Environment_Variables</a></dt>
 			<dd>PowerShell で Windows 環境変数にアクセスする方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/previous-versions/windows/powershell-scripting/hh847755(v=wps.640)" target="_blank">about_Escape_Characters</a></dt>
 			<dd>Windows PowerShell のエスケープ文字 (`) について紹介し、その効果について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_eventlogs" target="_blank">about_Eventlogs</a></dt>
-			<dd>Windows powershell では、windows PowerShell イベントを記録するために、"Windows PowerShell" という名前の Windows イベントログが作成されます。</dd>
+			<dd>この記事では、PowerShell で Windows イベント ログにイベントを記録する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_execution_policies" target="_blank">about_Execution_Policies</a></dt>
 			<dd>PowerShell の実行ポリシーについて説明し、その管理方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_experimental_features" target="_blank">about_Experimental_Features</a></dt>
@@ -96,15 +96,15 @@
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_foreach" target="_blank">about_Foreach</a></dt>
 			<dd>項目のコレクション内のすべての項目を走査するために使用できる言語コマンドについて説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/psworkflow/about/about_foreach-parallel" target="_blank">about_Foreach-Parallel</a></dt>
-			<dd>Windows PowerShell® ワークフローの <code>ForEach -Parallel</code> 言語構成要素について説明します。</dd>
+			<dd>Windows PowerShell® ワークフローの <code>ForEach -Parallel</code> 言語コンストラクトについて説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_format.ps1xml" target="_blank">about_Format.ps1xml</a></dt>
-			<dd><code>Format.ps1xml</code>Powershell のファイルには、powershell コンソールでのオブジェクトの既定の表示が定義されています。</dd>
+			<dd>Powershell の <code>Format.ps1xml</code> ファイルには、powershell コンソールでのオブジェクトの既定の表示を定義します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_functions" target="_blank">about_Functions</a></dt>
 			<dd>PowerShell で関数を作成して使用する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_functions_advanced" target="_blank">about_Functions_Advanced</a></dt>
-			<dd>コマンドレットに似た高度な関数が導入されています。</dd>
+			<dd>スクリプトを使用してコマンドレットを作成する方法である高度な関数について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_functions_advanced_methods" target="_blank">about_Functions_Advanced_Methods</a></dt>
-			<dd><code>CmdletBinding</code> 属性を指定する関数が、コンパイルされたコマンドレットで使用できるメソッドとプロパティを使用する方法について説明します。</dd>
+			<dd><code>CmdletBinding</code> 属性を指定する関数で、コンパイルされたコマンドレットで使用できるメソッドとプロパティを使用する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_functions_advanced_parameters" target="_blank">about_Functions_Advanced_Parameters</a></dt>
 			<dd>高度な関数にパラメーターを追加する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_functions_argument_completion" target="_blank">about_Functions_Argument_Completion</a></dt>
@@ -117,12 +117,12 @@
 			<dd>PowerShell のグループ ポリシー設定について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_hash_tables" target="_blank">about_Hash_Tables</a></dt>
 			<dd>PowerShell でハッシュテーブルを作成、使用、および並べ替える方法について説明します。</dd>
-			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_hidden" target="_blank">about_hidden</a></dt>
-			<dd>既定の Get-Member 結果からクラスメンバーを非表示にする Hidden キーワードについて説明します。</dd>
+			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_hidden" target="_blank">about_Hidden</a></dt>
+			<dd>既定の <code>Get-Member</code> 結果からクラスメンバーを非表示にする <code>hidden</code> キーワードについて説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_history" target="_blank">about_History</a></dt>
-			<dd>コマンド履歴のコマンドを取得して実行する方法について説明します。</dd>
+			<dd>コマンド履歴でコマンドを取得および実行する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_if" target="_blank">about_If</a></dt>
-			<dd>1つまたは複数の条件付きテストの結果に基づいてステートメントリストを実行するために使用できる言語コマンドについて説明します。</dd>
+			<dd>1 つ以上の条件付きテストの結果に基づいてステートメント リストを実行するために使用できる言語コマンドについて説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/psworkflow/about/about_inlinescript" target="_blank">about_InlineScript</a></dt>
 			<dd>ワークフローで PowerShell コマンドを実行する <code>InlineScript</code> アクティビティについて説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_intrinsic_members" target="_blank">about_Intrinsic_Members</a></dt>
@@ -130,35 +130,35 @@
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_jobs" target="_blank">about_Jobs</a></dt>
 			<dd>PowerShell バックグラウンドジョブが、現在のセッションと対話せずにバックグラウンドでコマンドまたは式を実行する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_job_details" target="_blank">about_Job_Details</a></dt>
-			<dd>ローカルコンピューターとリモートコンピューターのバックグラウンドジョブの詳細について説明します。</dd>
+			<dd>ローカルコンピューターとリモートコンピューターのバックグラウンドジョブの詳細を提供します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_join" target="_blank">about_Join</a></dt>
 			<dd>結合演算子 (-join) が複数の文字列を1つの文字列に結合する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_language_keywords" target="_blank">about_Language_Keywords</a></dt>
-			<dd>PowerShell スクリプト言語のキーワードについて説明します。</dd>
+			<dd>PowerShell スクリプト言語のキーワード (keyword)について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_language_modes" target="_blank">about_Language_Modes</a></dt>
 			<dd>言語モードと PowerShell セッションへの影響について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_line_editing" target="_blank">about_Line_Editing</a></dt>
 			<dd>PowerShell コマンドプロンプトでコマンドを編集する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_locations" target="_blank">about_Locations</a></dt>
-			<dd>PowerShell で作業場所から項目にアクセスする方法について説明します。</dd>
+			<dd>PowerShell で作業場所からアイテムにアクセスする方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_logging" target="_blank">About Logging</a></dt>
-			<dd>PowerShell は、エンジン、プロバイダー、およびコマンドレットからの内部操作をログに記録します。</dd>
+			<dd>PowerShell は、エンジン、プロバイダー、コマンドレットからの内部操作を Windows イベント ログに記録します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_logging_non-windows" target="_blank">about_Logging_Non-Windows</a></dt>
 			<dd>PowerShell は、エンジン、プロバイダー、およびコマンドレットからの内部操作をログに記録します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_logging_windows" target="_blank">about_Logging_Windows</a></dt>
-			<dd>PowerShell は、エンジン、プロバイダー、およびコマンドレットからの内部操作をログに記録します。</dd>
+			<dd>PowerShell は、エンジン、プロバイダー、コマンドレットからの内部操作を Windows イベント ログに記録します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_logical_operators" target="_blank">about_Logical_Operators</a></dt>
-			<dd>PowerShell のステートメントを接続する演算子について説明します。</dd>
+			<dd>PowerShell でステートメントを接続する演算子について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_member-access_enumeration" target="_blank">about_Member-Access_Enumeration</a></dt>
 			<dd>メンバーアクセス演算子を使用する場合のリストコレクション項目の自動列挙について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_methods" target="_blank">about_Methods</a></dt>
-			<dd>メソッドを使用して PowerShell のオブジェクトに対して実行する方法について説明します。</dd>
+			<dd>PowerShell でメソッドを使用してオブジェクトに対してアクションを実行する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_modules" target="_blank">about_Modules</a></dt>
 			<dd>PowerShell モジュールをインストール、インポート、および使用する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_module_manifest" target="_blank">about_Module_Manifests</a></dt>
-			<dd>モジュールマニフェストファイルを記述するための設定と方法について説明します。</dd>
+			<dd>モジュール マニフェスト ファイルを記述するための設定とプラクティスについて説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_numeric_literals" target="_blank">about_Numeric_Literals</a></dt>
-			<dd>数値リテラルには、整数と実数の2種類があります。 どちらも、型と乗数のサフィックスを持つことができます。</dd>
+			<dd>この記事では、PowerShell での数値の構文と使用方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_object_creation" target="_blank">about_Object_Creation</a></dt>
 			<dd>PowerShell でオブジェクトを作成する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_objects" target="_blank">about_Objects</a></dt>
@@ -166,13 +166,13 @@
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_operators" target="_blank">about_Operators</a></dt>
 			<dd>PowerShell でサポートされている演算子について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_operator_precedence" target="_blank">about_Operator_Precedence</a></dt>
-			<dd>PowerShell 演算子を優先順位別に一覧表示します。</dd>
+			<dd>PowerShell 演算子の優先順位を一覧表示します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_output_streams" target="_blank">about_Output_Streams</a></dt>
 			<dd>PowerShell での出力ストリームの可用性と用途について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_packagemanagement" target="_blank">about_PackageManagement</a></dt>
 			<dd>PackageManagement は、ソフトウェアパッケージマネージャーのアグリゲーターです。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/psworkflow/about/about_parallel" target="_blank">about_Parallel</a></dt>
-			<dd>ワークフロー内のアクティビティを並列実行する Parallel キーワードについて説明します。</dd>
+			<dd>ワークフロー内のアクティビティを並列で実行する Parallel キーワード (keyword)について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_parameter_sets" target="_blank">about_Parameter_Sets</a></dt>
 			<dd>高度な関数でパラメーターセットを定義して使用する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_parameters" target="_blank">about_Parameters</a></dt>
@@ -182,17 +182,17 @@
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_parsing" target="_blank">about_Parsing</a></dt>
 			<dd>PowerShell によるコマンドの解析方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_path_syntax" target="_blank">about_Path_Syntax</a></dt>
-			<dd>PowerShell での完全パス名と相対パス名の形式について説明します。</dd>
+			<dd>PowerShell の完全パス形式と相対パス形式について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators" target="_blank">about_Pipeline_Chain_Operators</a></dt>
-			<dd>PowerShell の <code>&&</code> と <code>||</code> 演算子を使用したパイプラインのチェーンについて説明します。</dd>
+			<dd>PowerShell の <code>&&</code> と <code>||</code> 演算子を使ったパイプラインの連結について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_pipelines" target="_blank">about_Pipelines</a></dt>
 			<dd>PowerShell でコマンドをパイプラインに結合します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_powershell_exe" target="_blank">about_PowerShell.exe</a></dt>
-			<dd>PowerShell.exe コマンドラインツールの使用方法について説明します。 構文を表示し、コマンドラインスイッチについて説明します。</dd>
+			<dd><code>powershell.exe</code> コマンドラインツールの使用方法について説明します。 コマンド ライン パラメーターを表示し、構文について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_powershell_config" target="_blank">about_PowerShell_Config</a></dt>
 			<dd>レジストリ構成を置き換える PowerShell Core の構成ファイル。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_powershell_editions" target="_blank">about_PowerShell_Editions</a></dt>
-			<dd>PowerShell のさまざまなエディションは、基になるさまざまなランタイムで実行されます。</dd>
+			<dd>PowerShell のエディションが異なると、基になるランタイムが異なります。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_powershell_ise_exe" target="_blank">about_PowerShell_Ise.exe</a></dt>
 			<dd>PowerShell_ISE.exe コマンドライン ツールの使用方法について説明します</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_preference_variables" target="_blank">about_Preference_Variables</a></dt>
@@ -200,11 +200,11 @@
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_profiles" target="_blank">about_Profiles</a></dt>
 			<dd>PowerShell プロファイルを作成して使用する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_prompts" target="_blank">about_Prompts</a></dt>
-			<dd>prompt 関数について説明し、カスタムプロンプト関数を作成する方法を示します。</dd>
+			<dd><code>Prompt</code> 関数について説明し、カスタム <code>Prompt</code> 関数を作成する方法を示します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_properties" target="_blank">about_Properties</a></dt>
 			<dd>PowerShell でオブジェクトのプロパティを使用する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_providers" target="_blank">about_Providers</a></dt>
-			<dd>PowerShell プロバイダーが、コマンドラインから簡単にアクセスできないデータおよびコンポーネントへのアクセスを提供する方法について説明します。</dd>
+			<dd>PowerShell プロバイダーが、コマンドラインから簡単にアクセスできないデータおよびコンポーネントへのアクセスを提供する方法について説明します。 データは、ファイル システム ドライブに似た一貫性のある形式で表示されます。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_psconsolehostreadline" target="_blank">about_PSConsoleHostReadLine</a></dt>
 			<dd>PowerShell がコンソールプロンプトで入力を読み取る方法をカスタマイズする方法を説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_pscustomobject" target="_blank">about_PSCustomObject</a></dt>
@@ -212,9 +212,9 @@
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_psitem" target="_blank">about_PSItem</a></dt>
 			<dd>パイプライン オブジェクトの現在のオブジェクトを含む自動変数。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_psmodulepath" target="_blank">about_PSModulePath</a></dt>
-			<dd><code>$env:PSModulePath</code> 環境変数には、モジュールとリソースを検索するために検索されるフォルダーの場所の一覧が含まれています。</dd>
+			<dd>この記事では、 <code>$env:PSModulePath</code> 環境変数の目的と使用方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/psreadline/about/about_psreadline" target="_blank">about_PSReadline</a></dt>
-			<dd>PSReadLine では、PowerShell コンソールでのコマンドライン編集エクスペリエンスが向上しています。</dd>
+			<dd>PSReadLine は、PowerShell コンソールでのコマンド ライン編集エクスペリエンスの向上を提供します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/psreadline/about/about_psreadline_functions" target="_blank">about_PSReadLine_Functions</a></dt>
 			<dd>PSReadLine は、PowerShell コンソールでのコマンド ライン編集エクスペリエンスの向上を提供します。この記事では、PSReadLine によって提供される関数について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.psresourceget/about/about_psresourceget" target="_blank">about_PSResourceGet</a></dt>
@@ -224,37 +224,37 @@
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_pssession_details" target="_blank">about_PSSession_Details</a></dt>
 			<dd>PowerShell セッションとそれらがリモートコマンドで果たす役割の詳細について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_pssnapins" target="_blank">about_PSSnapins</a></dt>
-			<dd>PowerShell スナップインについて説明し、それらを使用および管理する方法を示します。</dd>
+			<dd>Windows PowerShell スナップインについて説明し、その使用方法と管理方法を示します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_pwsh" target="_blank">about_pwsh</a></dt>
-			<dd>Pwsh コマンドラインツールの使用方法について説明します。 構文を表示し、コマンドラインスイッチについて説明します。 pwsh は PowerShell セッションを開始します。</dd>
+			<dd><code>pwsh</code> コマンドライン インターフェイスの使用方法について説明します。 コマンドライン パラメーターを表示し、構文について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_quoting_rules" target="_blank">about_Quoting_Rules</a></dt>
 			<dd>PowerShell で単一引用符と二重引用符を使用するための規則について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_redirection" target="_blank">about_Redirection</a></dt>
 			<dd>PowerShell からテキストファイルに出力をリダイレクトする方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_ref" target="_blank">about_Ref</a></dt>
-			<dd>参照型の変数を作成して使用する方法について説明します。 参照型の変数を使用すると、関数に渡される変数の値を変更することができます。</dd>
+			<dd>参照型変数を作成して使用する方法について説明します。 参照型変数を使用して、渡される変数の値を関数が変更できるようにします。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_regular_expressions" target="_blank">about_Regular_Expressions</a></dt>
 			<dd>PowerShell の正規表現について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_remote" target="_blank">about_Remote</a></dt>
 			<dd>PowerShell でリモートコマンドを実行する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_remote_disconnected_sessions" target="_blank">about_Remote_Disconnected_Sessions</a></dt>
-			<dd>PSSession を切断し、再接続する方法について説明します。</dd>
+			<dd>PowerShell セッション (PSSession) を切断して再接続する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/previous-versions/windows/powershell-scripting/hh847845(v=wps.640)" target="_blank">about_Remote_FAQ</a></dt>
-			<dd>PowerShell でのリモートコマンドの実行に関する質問と回答が含まれています。</dd>
+			<dd>Windows PowerShell でのリモートコマンドの実行に関する質問と回答が含まれています。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_remote_jobs" target="_blank">about_Remote_Jobs</a></dt>
 			<dd>リモート コンピューターでバックグラウンド ジョブを実行する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_remote_output" target="_blank">about_Remote_Output</a></dt>
-			<dd>リモートコマンドの出力を解釈および書式設定する方法について説明します。</dd>
+			<dd>リモート コマンドの出力を解釈して書式設定する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_remote_requirements" target="_blank">about_Remote_Requirements</a></dt>
 			<dd>PowerShell でリモートコマンドを実行するためのシステム要件と構成要件について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting" target="_blank">about_Remote_Troubleshooting</a></dt>
-			<dd>PowerShell でのリモート操作のトラブルシューティング方法について説明します。</dd>
+			<dd>PowerShell でのリモート操作のトラブルシューティングを行う方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_remote_variables" target="_blank">about_Remote_Variables</a></dt>
 			<dd>リモート コマンドのローカル変数とリモート変数の使用方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_requires" target="_blank">about_Requires</a></dt>
-			<dd>必須の要素を使用せずにスクリプトを実行しないようにします。</dd>
+			<dd>スクリプトが必要な要素なしで実行されないようにします。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_reserved_words" target="_blank">about_Reserved_Words</a></dt>
-			<dd>PowerShell で特別な意味を持つため、識別子として使用できない予約語の一覧を示します。</dd>
+			<dd>PowerShell では特別な意味を持つため、識別子として使用できない予約語の一覧を示します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_return" target="_blank">about_Return</a></dt>
 			<dd>現在の範囲 (関数、スクリプト、スクリプト ブロック) を終了します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_run_with_powershell" target="_blank">about_Run_With_PowerShell</a></dt>
@@ -266,9 +266,9 @@
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/psscheduledjob/about/about_scheduled_jobs_basics" target="_blank">about_Scheduled_Jobs_Basics</a></dt>
 			<dd>ジョブをスケジュールし、管理する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/psscheduledjob/about/about_scheduled_jobs_troubleshooting" target="_blank">about_Scheduled_Jobs_Troubleshooting</a></dt>
-			<dd>スケジュールされたジョブに関する問題の解決方法について説明します。</dd>
+			<dd>スケジュールされたジョブに関する問題を解決する方法について説明します</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_scopes" target="_blank">about_Scopes</a></dt>
-			<dd>PowerShell のスコープの概念について説明し、要素のスコープを設定および変更する方法を示します。</dd>
+			<dd>PowerShell のスコープの概念と、要素のスコープを設定および変更する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_script_blocks" target="_blank">about_Script_Blocks</a></dt>
 			<dd>スクリプトブロックとは何かを定義し、PowerShell プログラミング言語でスクリプトブロックを使用する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_script_internationalization" target="_blank">about_Script_Internationalization</a></dt>
@@ -280,49 +280,49 @@
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_session_configurations" target="_blank">about_Session_Configurations</a></dt>
 			<dd>コンピューターにリモート接続できるユーザーとそのユーザーが実行できるコマンドを決定するセッション構成について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_session_configuration_files" target="_blank">about_Session_Configuration_Files</a></dt>
-			<dd>セッション構成を使用するセッションの環境を定義するためにセッション構成 ("エンドポイント" とも呼ばれます) で使用されるセッション構成ファイルについて説明します。</dd>
+			<dd>セッション構成ファイルについて説明します。セッション構成ファイルは、セッション構成 ("エンドポイント" とも呼ばれます) で使用され、セッション構成を使用するセッションの環境を定義するために使用されます。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_signing" target="_blank">about_Signing</a></dt>
 			<dd>PowerShell の実行ポリシーに準拠するようにスクリプトに署名する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_simplified_syntax" target="_blank">about_Simplified_Syntax</a></dt>
-			<dd>オブジェクトのコレクションに対するスクリプトフィルターの、より簡単で自然言語の方法について説明します。</dd>
+			<dd>オブジェクトのコレクションのフィルターをスクリプト化する、より簡単で自然な言語の方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_special_characters" target="_blank">about_Special_Characters</a></dt>
-			<dd>コマンドまたはパラメーターの次の文字を PowerShell で解釈する方法を制御するために使用できる特殊文字について説明します。</dd>
+			<dd>PowerShell がシーケンス内の次の文字を解釈する方法を制御する特殊文字シーケンスについて説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_splatting" target="_blank">about_Splatting</a></dt>
 			<dd>スプラッティングを使用して PowerShell のコマンドにパラメーターを渡す方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_split" target="_blank">about_Split</a></dt>
-			<dd>Split 演算子を使用して1つ以上の文字列を部分文字列に分割する方法について説明します。</dd>
+			<dd>Split 演算子を使用して、 1 つ以上の文字列を部分文字列に分割する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/psworkflow/about/about_suspend-workflow" target="_blank">about_Suspend-Workflow</a></dt>
-			<dd><code>Suspend-Workflow</code> アクティビティについて説明します。このアクティビティは、アクティビティが表示されるワークフローを中断します。</dd>
+			<dd><code>Suspend-Workflow</code> アクティビティが表す、ワークフローを中断するアクティビティについて説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_switch" target="_blank">about_Switch</a></dt>
 			<dd>スイッチを使用して複数の <code>If</code> ステートメントを処理する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_tab_expansion" target="_blank">about_Tab_Expansion</a></dt>
-			<dd>PowerShell では、ヒントの提供、検出の有効化、入力入力の高速化を行う入力入力の完了が提供されます。 コマンド名、パラメーター名、引数の値、ファイル パスはすべて <kbd>Tab</kbd> キーを押すことで完了できます。</dd>
+			<dd>PowerShell には、ヒントの提示、検出の有効化、入力エントリの高速化のために、入力補完が搭載されています。 コマンド名、パラメーター名、引数値、ファイル パスのすべてを、<kbd>Tab</kbd> キーを押して補完できます。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_telemetry" target="_blank">about_Telemetry</a></dt>
-			<dd>PowerShell で収集されたテレメトリについて説明します。</dd>
+			<dd>PowerShell で収集されるテレメトリと、オプトアウトする方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_thread_jobs" target="_blank">about_Thread_Jobs</a></dt>
 			<dd>PowerShell スレッドベースのジョブに関する情報を提供します。 スレッドジョブは、現在のセッションプロセス内の別のスレッドでコマンドまたは式を実行するバックグラウンドジョブの一種です。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_throw" target="_blank">about_Throw</a></dt>
-			<dd>終了エラーを生成する Throw キーワードについて説明します。</dd>
+			<dd>終了エラーを生成する <code>throw</code> キーワードについて説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_transactions" target="_blank">about_Transactions</a></dt>
-			<dd>PowerShell でのトランザクション操作の管理方法について説明します。</dd>
+			<dd>PowerShell でトランザクション操作を管理する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_trap" target="_blank">about_Trap</a></dt>
 			<dd>終了エラーを処理するキーワードについて説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_try_catch_finally" target="_blank">about_Try_Catch_Finally</a></dt>
-			<dd><code>Try</code>、<code>Catch</code>、および <code>Finally</code> ブロックを使用して、終了エラーを処理する方法について説明します。</dd>
+			<dd><code>try</code>、<code>catch</code>、<code>finally</code> ブロックを使用して、終了エラーを処理する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_type_accelerators" target="_blank">about_Type_Accelerators</a></dt>
 			<dd>.NET framework クラスで使用できる型アクセラレータについて説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_type_operators" target="_blank">about_Type_Operators</a></dt>
-			<dd>Microsoft .NET Framework 型を操作する演算子について説明します。</dd>
+			<dd>Microsoft .NET 型で動作する演算子について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_types.ps1xml" target="_blank">about_Types.ps1xml</a></dt>
-			<dd>Types.ps1xml ファイルを使用して、PowerShell で使用されるオブジェクトの種類を拡張する方法について説明します。</dd>
+			<dd><code>Types.ps1xml</code> ファイルを使用して、PowerShell で使用されるオブジェクトの種類を拡張する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_updatable_help" target="_blank">about_Updatable_Help</a></dt>
 			<dd>PowerShell の更新可能なヘルプシステムについて説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_update_notifications" target="_blank">about_Update_Notifications</a></dt>
-			<dd>Powershell の新しいバージョンがリリースされたことをユーザーに通知します。</dd>
+			<dd>PowerShell の起動時に、新しいバージョンの PowerShell がリリースされたことをユーザーに通知します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_using" target="_blank">about_Using</a></dt>
-			<dd>セッションで使用されている名前空間を示すことができます。</dd>
+			<dd>セッションで使用する名前空間を指定できます。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_variables" target="_blank">about_Variables</a></dt>
-			<dd>PowerShell で使用できる値を変数に格納する方法について説明します。</dd>
+			<dd>PowerShell で使用できる値を変数が格納する方法について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_while" target="_blank">about_While</a></dt>
 			<dd>条件テストの結果に基づいてコマンドブロックを実行するために使用できる言語ステートメントについて説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_wildcards" target="_blank">about_Wildcards</a></dt>
@@ -344,17 +344,17 @@
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_windows_rt" target="_blank">about_Windows_RT</a></dt>
 			<dd>Windows RT 8.1 の PowerShell 4.0 の制限事項について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/psworkflow/about/about_workflows" target="_blank">about_Workflows</a></dt>
-			<dd>PowerShell ワークフロー機能の概要について説明します。</dd>
+			<dd>PowerShell ワークフロー機能の簡単な概要について説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/psworkflow/about/about_workflowcommonparameters" target="_blank">about_WorkflowCommonParameters</a></dt>
 			<dd>すべての Windows PowerShell ワークフロー コマンドで有効なパラメーターについて説明します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_wmi" target="_blank">about_WMI</a></dt>
-			<dd>Windows Management Instrumentation (WMI) は、Common Information Model (CIM) を使用して、先進企業のシステム、アプリケーション、ネットワーク、デバイス、およびその他の管理可能なコンポーネントを表します。</dd>
+			<dd>Windows Management Instrumentation (WMI) は、共通情報モデル (CIM) を使用して、最新の企業のシステム、アプリケーション、ネットワーク、デバイス、およびその他の管理可能なコンポーネントを表します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_wmi_cmdlets" target="_blank">about_WMI_Cmdlets</a></dt>
-			<dd>Windows Management Instrumentation (WMI) と PowerShell についての背景情報を提供します。</dd>
+			<dd>Windows Management Instrumentation (WMI) と Windows PowerShell の背景情報を提供します。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_wql" target="_blank">about_WQL</a></dt>
-			<dd>PowerShell で WMI オブジェクトを取得するために使用できる WMI Query Language (WQL) について説明します。</dd>
+			<dd>WMI Query Language (WQL) について説明します。これは Windows PowerShell で WMI オブジェクトを取得するために使用できます。</dd>
 			<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.wsman.management/about/about_ws-management_cmdlets" target="_blank">about_WS-Management_Cmdlets</a></dt>
-			<dd>Windows PowerShell の WS-Management コマンドレットを使用するための背景としての Web Services for Management (WS-MANAGEMENT) の概要について説明します。</dd>
+			<dd>Windows PowerShell で WS-Management コマンドレットを使用するための背景としての Web Services for Management (WS-Management) の概要について説明します。</dd>
 			<!--
 			<dt><a href="" target="_blank"></a></dt>
 			<dd></dd>
